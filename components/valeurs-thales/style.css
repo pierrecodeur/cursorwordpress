@@ -27,16 +27,18 @@
 .wpcursor-valeurs-thales__item {
 	min-width: 0;
 	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	display: grid;
+	grid-template-rows: 96px 4.6em auto;
+	row-gap: 1rem;
+	justify-items: center;
+	align-items: start;
 }
 
 .wpcursor-valeurs-thales__icon-wrap {
 	position: relative;
 	width: 112px;
 	height: 96px;
-	margin: 0 0 1rem;
+	margin: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -76,8 +78,7 @@
 
 .wpcursor-valeurs-thales__title {
 	max-width: 220px;
-	min-height: 3.7em;
-	margin: 0 0 0.7rem;
+	margin: 0;
 	color: #08123c;
 	font-size: clamp(0.95rem, 1.4vw, 1.05rem);
 	font-weight: 800;
@@ -128,12 +129,13 @@
 	.wpcursor-valeurs-thales__item {
 		max-width: 280px;
 		margin: 0 auto;
+		grid-template-rows: auto;
+		row-gap: 0.85rem;
 	}
 
 	.wpcursor-valeurs-thales__icon-wrap {
 		width: 100px;
 		height: 86px;
-		margin-bottom: 0.85rem;
 	}
 
 	.wpcursor-valeurs-thales__svg {
@@ -142,7 +144,6 @@
 	}
 
 	.wpcursor-valeurs-thales__title {
-		min-height: 0;
-		margin-bottom: 0.55rem;
+		max-width: 240px;
 	}
 }
