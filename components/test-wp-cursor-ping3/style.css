@@ -1,0 +1,42 @@
+/**
+ * Composant test-wp-cursor-ping3.
+ */
+
+.wpcursor-test-wp-cursor-ping3 {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+	padding: 14px 22px;
+	border: 1px solid #d7e3ff;
+	border-radius: 12px;
+	background: #f7faff;
+	box-shadow: 0 2px 8px rgba(29, 95, 147, 0.08);
+	box-sizing: border-box;
+}
+
+.wpcursor-test-wp-cursor-ping3--compact {
+	padding: 8px 14px;
+	border-radius: 999px;
+}
+
+.wpcursor-test-wp-cursor-ping3__label {
+	margin: 0;
+	color: #1d5f93;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.4;
+	text-align: center;
+}
+
+@media (max-width: 600px) {
+	.wpcursor-test-wp-cursor-ping3 {
+		display: flex;
+		width: 100%;
+		padding: 12px 16px;
+	}
+
+	.wpcursor-test-wp-cursor-ping3__label {
+		font-size: 0.95rem;
+	}
+}

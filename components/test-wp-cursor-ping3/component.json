@@ -1,0 +1,21 @@
+{
+  "$schema": "wpcursor-component-v1",
+  "label": "Test WP Cursor Ping 3",
+  "description": "Composant de test minimal qui affiche OK.",
+  "version": "1.0.0",
+  "updated": "2026-06-20",
+  "props": {
+    "label": {
+      "type": "string",
+      "required": false,
+      "default": "OK",
+      "css_selector": ".wpcursor-test-wp-cursor-ping3__label"
+    },
+    "variant": {
+      "type": "enum",
+      "values": ["default", "compact"],
+      "required": false,
+      "default": "default"
+    }
+  }
+}

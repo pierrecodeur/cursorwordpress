@@ -1,0 +1,6 @@
+# Modele Divi - Test WP Cursor Ping 3
+
+[wpcursor name="test-wp-cursor-ping3"]
+label=OK
+variant=default
+[/wpcursor]
