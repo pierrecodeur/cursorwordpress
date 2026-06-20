@@ -1,0 +1,54 @@
+{
+  "$schema": "wpcursor-component-v1",
+  "label": "Mission — liste à puces",
+  "description": "Titre centré, intro italique, carte blanche et 3 points avec icône check.",
+  "version": "1.0.0",
+  "updated": "2026-05-11",
+  "props": {
+    "heading_tag": {
+      "type": "enum",
+      "values": ["h1", "h2", "h3", "p"],
+      "required": false,
+      "css_selector": ".wpcursor-mission-liste__title"
+    },
+    "title": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-mission-liste__title"
+    },
+    "intro": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-mission-liste__intro"
+    },
+    "item1": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-mission-liste__text"
+    },
+    "item2": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-mission-liste__text"
+    },
+    "item3": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-mission-liste__text"
+    },
+    "variant": {
+      "type": "enum",
+      "values": ["default"],
+      "required": false
+    },
+    "custom_html": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-mission-liste__custom-html"
+    },
+    "custom_css": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

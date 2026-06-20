@@ -1,0 +1,29 @@
+# Témoignages prépa — carrousel (jusqu'à 10 profils)
+
+# Slide 1 (obligatoire pour afficher le composant)
+[wpcursor name="temoignages-prepa"]
+section_title=Une question sur notre préparation Sciences Po ? Ecrivez-nous !
+cta_text=Rejoindre la prépa
+cta_url=
+logo_url=
+logo_alt=Cours Thalès
+show_bottom_chevron=yes
+slide1_video_url=
+slide1_video_etiquette=Nos anciens élèves témoignent
+slide1_video_caption=Prépa Sciences Po en Première et en Terminale
+slide1_image_url=
+slide1_image_alt=Témoignage élève Cours Thalès
+slide1_quote=Cela m'a apporté deux choses sur les deux années où je l'ai faite. La première année, cela a affirmé ma motivation et cela m'a aussi permis de me familiariser avec les procédures d'admission et après en Terminale cela m'a vraiment permis de prendre confiance en moi…
+slide1_author=Marie – Stage Sciences Po
+[/wpcursor]
+
+# Slide 2 — dupliquer avec le préfixe slide2_
+# slide2_video_url=
+# slide2_video_etiquette=
+# slide2_video_caption=
+# slide2_image_url=
+# slide2_image_alt=
+# slide2_quote=
+# slide2_author=
+
+# Slides 3 à 10 : slide3_ … slide10_

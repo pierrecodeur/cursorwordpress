@@ -1,0 +1,23 @@
+/**
+ * Composant coucou-edouard — variante claire (light).
+ * Shortcode : [wpcursor name="coucou-edouard" variant="light"]
+ * ou variant=claire
+ */
+
+.wpcursor-coucou-edouard--light {
+	display: inline-block;
+	padding: 12px 20px;
+	border-radius: 10px;
+	background: #f0f6ff;
+	border: 1px solid #c9dcff;
+	box-shadow: 0 1px 3px rgba(34, 113, 177, 0.08);
+	box-sizing: border-box;
+}
+
+.wpcursor-coucou-edouard--light .wpcursor-coucou-edouard__text {
+	margin: 0;
+	font-size: 1.125rem;
+	font-weight: 600;
+	line-height: 1.4;
+	color: #1d5f93;
+}

@@ -1,0 +1,20 @@
+# Pourquoi suivre une prépa Sciences Po
+
+[wpcursor name="pourquoi-prepa"]
+section_title=Pourquoi suivre une prépa Sciences Po dès le Lycée ?
+cta_text=S'inscrire à la prépa
+cta_url=
+card1_eyebrow=MOINS DE 10%
+card1_title=Une sélectivité extrême
+card1_body=Chaque Sciences Po voit son taux de sélection varier entre 8 % et 11 % selon les procédures d'admission. Cela signifie que seuls les dossiers les plus solides et les plus préparés ont une chance de se démarquer.
+card2_eyebrow=MÉTHODE & RIGUEUR
+card2_title=Des épreuves exigeantes
+card2_body=Les procédures d'admission incluent des dissertations sur des questions contemporaines, des analyses de documents et un Grand Oral. Ces épreuves demandent une méthode de travail rigoureuse, une solide culture générale et une capacité à articuler sa réflexion avec clarté et cohérence.
+card3_eyebrow=NIVEAU DE SÉLECTIVITÉ
+card3_title=Une compétition nationale
+card3_body=Près de 30 000 candidats présentent chaque année un dossier pour les différents IEP, pour un nombre de places resté stable autour de 2 500. Les candidats les plus motivés, informés et préparés sont ceux qui font les meilleurs choix stratégiques et anticipent efficacement les différentes procédures.
+footer_link_text=En savoir plus
+footer_link_url=
+custom_html=
+custom_css=
+[/wpcursor]

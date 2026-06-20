@@ -1,0 +1,17 @@
+# Guide admission — lead magnet Sciences Po
+
+[wpcursor name="guide-admission"]
+section_title=Pour recevoir votre petit guide d'admission à Sciences Po, remplissez le formulaire suivant
+benefit1=Présentation de notre Prépa
+benefit2=Présentation des IEP, des concours, des campus
+benefit3=Des fiches méthodos
+benefit4=Des fiches méthodos
+benefit5=Checklist de préparation et plein d'autres bonus !
+guide_image_url=
+guide_image_alt=Le petit guide Sciences Po — la ressource complète
+form_id=
+form_shortcode=
+legal_text=En soumettant ce formulaire, vous acceptez que Cours Thalès utilise vos données pour vous envoyer le guide et vous contacter dans le cadre de votre projet de prépa. Vous pouvez vous désinscrire à tout moment.
+custom_html=
+custom_css=
+[/wpcursor]

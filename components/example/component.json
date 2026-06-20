@@ -1,0 +1,7 @@
+{
+  "$schema": "wpcursor-component-v1",
+  "label": "Composant exemple",
+  "version": "1.0.0",
+  "updated": "2026-05-10",
+  "props": {}
+}

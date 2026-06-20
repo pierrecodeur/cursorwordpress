@@ -1,0 +1,71 @@
+{
+  "$schema": "wpcursor-component-v1",
+  "label": "Guide admission",
+  "description": "Lead magnet Sciences Po : titre, pills avantages, visuel du guide et formulaire Gravity Forms.",
+  "version": "1.0.1",
+  "updated": "2026-06-03",
+  "props": {
+    "section_title": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-guide-admission__heading"
+    },
+    "benefit1": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-guide-admission__benefit"
+    },
+    "benefit2": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-guide-admission__benefit"
+    },
+    "benefit3": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-guide-admission__benefit"
+    },
+    "benefit4": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-guide-admission__benefit"
+    },
+    "benefit5": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-guide-admission__benefit"
+    },
+    "guide_image_url": {
+      "type": "url",
+      "required": false
+    },
+    "guide_image_alt": {
+      "type": "string",
+      "required": false
+    },
+    "form_id": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-guide-admission__form-embed"
+    },
+    "form_shortcode": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-guide-admission__form-embed"
+    },
+    "legal_text": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-guide-admission__legal"
+    },
+    "custom_html": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-guide-admission__custom-html"
+    },
+    "custom_css": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

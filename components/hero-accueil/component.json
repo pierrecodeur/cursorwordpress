@@ -1,0 +1,97 @@
+{
+  "$schema": "wpcursor-component-v1",
+  "label": "Hero accueil",
+  "description": "Hero page d’accueil : badge, titres, intro, grille stats 2×2, avis Google, image (médiathèque), CTA RDV, frise chevron en bas.",
+  "version": "1.0.0",
+  "updated": "2026-06-18",
+  "props": {
+    "heading_tag": {
+      "type": "enum",
+      "values": ["h1", "h2", "h3", "p"],
+      "required": false,
+      "default": "h1"
+    },
+    "subheading_tag": {
+      "type": "enum",
+      "values": ["h1", "h2", "h3", "h4", "p"],
+      "required": false,
+      "default": "h2"
+    },
+    "badge": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-accueil__badge"
+    },
+    "title": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-accueil__title"
+    },
+    "subtitle": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-accueil__subtitle"
+    },
+    "intro": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-accueil__intro"
+    },
+    "title_font_size": {
+      "type": "string",
+      "required": false,
+      "description": "Ex. 2.5rem ou clamp(1.8rem, 4vw, 2.75rem)"
+    },
+    "subtitle_font_size": {
+      "type": "string",
+      "required": false,
+      "description": "Ex. 1.35rem"
+    },
+    "intro_font_size": {
+      "type": "string",
+      "required": false,
+      "description": "Ex. 0.95rem"
+    },
+    "stat1_value": { "type": "string", "required": false, "css_selector": ".wpcursor-hero-accueil__stat-value" },
+    "stat1_label": { "type": "string", "required": false, "css_selector": ".wpcursor-hero-accueil__stat-label" },
+    "stat2_value": { "type": "string", "required": false },
+    "stat2_label": { "type": "string", "required": false },
+    "stat3_value": { "type": "string", "required": false },
+    "stat3_label": { "type": "string", "required": false },
+    "stat4_value": { "type": "string", "required": false },
+    "stat4_label": { "type": "string", "required": false },
+    "show_reviews": {
+      "type": "enum",
+      "values": ["yes", "no"],
+      "required": false,
+      "default": "yes"
+    },
+    "reviews_rating": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-accueil__reviews-rating"
+    },
+    "reviews_count": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-accueil__reviews-count"
+    },
+    "reviews_url": { "type": "url", "required": false },
+    "image_url": { "type": "url", "required": false },
+    "image_alt": { "type": "string", "required": false },
+    "cta_text": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-accueil__cta"
+    },
+    "cta_url": { "type": "url", "required": false },
+    "show_bottom_chevron": {
+      "type": "enum",
+      "values": ["yes", "no"],
+      "required": false,
+      "default": "yes"
+    },
+    "custom_html": { "type": "string", "required": false },
+    "custom_css": { "type": "string", "required": false }
+  }
+}

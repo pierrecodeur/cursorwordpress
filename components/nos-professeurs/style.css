@@ -1,0 +1,136 @@
+/**
+ * Nos professeurs — cartes portrait.
+ */
+
+.wpcursor-nos-professeurs {
+	box-sizing: border-box;
+	margin: 0 0 2rem;
+	color: #06113a;
+}
+
+.wpcursor-nos-professeurs__inner {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 1.25rem;
+	box-sizing: border-box;
+}
+
+.wpcursor-nos-professeurs__heading {
+	margin: 0 0 1.35rem;
+	font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+	font-weight: 700;
+	line-height: 1.35;
+	text-align: center;
+	color: #06113a;
+}
+
+.wpcursor-nos-professeurs__grid {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 0.85rem;
+	align-items: stretch;
+}
+
+.wpcursor-nos-professeurs__card {
+	position: relative;
+	overflow: hidden;
+	border-radius: 14px;
+	min-height: 280px;
+	aspect-ratio: 3 / 4;
+	background: #1f2937;
+	box-shadow: 0 8px 24px rgba(6, 17, 58, 0.12);
+}
+
+.wpcursor-nos-professeurs__photo {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center top;
+	display: block;
+}
+
+.wpcursor-nos-professeurs__photo--placeholder {
+	background: linear-gradient(160deg, #4b5563 0%, #1f2937 55%, #111827 100%);
+}
+
+.wpcursor-nos-professeurs__overlay {
+	position: absolute;
+	inset: auto 0 0 0;
+	padding: 2.5rem 0.85rem 0.85rem;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.55) 55%, transparent 100%);
+	box-sizing: border-box;
+}
+
+.wpcursor-nos-professeurs__quote {
+	margin: 0 0 0.35rem;
+	font-size: 0.8125rem;
+	font-weight: 500;
+	line-height: 1.45;
+	color: #fff;
+}
+
+.wpcursor-nos-professeurs__name {
+	margin: 0;
+	font-size: 0.8125rem;
+	font-weight: 700;
+	line-height: 1.3;
+	color: #fff;
+}
+
+@media (max-width: 900px) {
+	.wpcursor-nos-professeurs__grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.75rem;
+	}
+
+	.wpcursor-nos-professeurs__card {
+		min-height: 260px;
+	}
+}
+
+@media (max-width: 767px) {
+	.wpcursor-nos-professeurs__inner {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.wpcursor-nos-professeurs__heading {
+		margin-bottom: 1rem;
+		font-size: 1.05rem;
+		text-align: left;
+	}
+
+	.wpcursor-nos-professeurs__grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.65rem;
+	}
+
+	.wpcursor-nos-professeurs__card {
+		min-height: 220px;
+		border-radius: 12px;
+	}
+
+	.wpcursor-nos-professeurs__overlay {
+		padding: 2rem 0.7rem 0.7rem;
+	}
+
+	.wpcursor-nos-professeurs__quote,
+	.wpcursor-nos-professeurs__name {
+		font-size: 0.75rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.wpcursor-nos-professeurs__grid {
+		grid-template-columns: 1fr;
+		max-width: 280px;
+		margin: 0 auto;
+	}
+
+	.wpcursor-nos-professeurs__card {
+		aspect-ratio: 4 / 5;
+		min-height: 0;
+	}
+}

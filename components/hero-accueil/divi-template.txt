@@ -1,0 +1,33 @@
+# Hero accueil — page d’accueil Cours Thalès
+# image_url : bouton « Choisir dans la médiathèque » dans le générateur / module Divi
+
+[wpcursor name="hero-accueil"]
+heading_tag=h1
+subheading_tag=h2
+badge=Cours Thalès, préparation au BAC et aux concours dès le lycée
+title=Cours Thalès
+subtitle=Transformons vos efforts en réussite
+intro=Depuis 17 ans Cours Thalès prépare aux cursus les plus sélectifs dès le lycée : Médecine, Sciences Po, CPGE, Concours Ingénieur ou commerce post-bac.
+title_font_size=
+subtitle_font_size=
+intro_font_size=
+stat1_value=68%
+stat1_label=D'admis à Science Po Paris
+stat2_value=74%
+stat2_label=D'admis à Science Po Paris
+stat3_value=68%
+stat3_label=D'admis à Science Po Paris
+stat4_value=74%
+stat4_label=D'admis à Science Po Paris
+show_reviews=yes
+reviews_rating=4.8
+reviews_count=565 avis
+reviews_url=
+image_url=
+image_alt=Élèves en cours chez Cours Thalès
+cta_text=Prendre RDV avec un conseiller
+cta_url=
+show_bottom_chevron=yes
+custom_html=
+custom_css=
+[/wpcursor]

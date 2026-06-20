@@ -1,0 +1,366 @@
+/**
+ * Guide admission — lead magnet + formulaire.
+ */
+
+.wpcursor-guide-admission {
+	box-sizing: border-box;
+	margin: 0 0 2rem;
+	color: #06113a;
+}
+
+.wpcursor-guide-admission__inner {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 1.25rem;
+	box-sizing: border-box;
+}
+
+.wpcursor-guide-admission__heading {
+	margin: 0 0 1.15rem;
+	font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+	font-weight: 700;
+	line-height: 1.35;
+	text-align: center;
+	color: #06113a;
+	max-width: 52rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wpcursor-guide-admission__benefits {
+	list-style: none;
+	margin: 0 auto 1.5rem;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.55rem 0.65rem;
+	max-width: 920px;
+}
+
+.wpcursor-guide-admission__benefit {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.45rem;
+	padding: 0.45rem 0.85rem;
+	border-radius: 999px;
+	background: #8994bd;
+	color: #fff;
+	font-size: 0.8125rem;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+.wpcursor-guide-admission__benefit-icon {
+	flex-shrink: 0;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	border: 1.5px solid rgba(255, 255, 255, 0.85);
+	background: transparent;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.wpcursor-guide-admission__benefit-icon::after {
+	content: "";
+	position: absolute;
+	left: 4px;
+	top: 2px;
+	width: 3px;
+	height: 6px;
+	border: solid #fff;
+	border-width: 0 1.5px 1.5px 0;
+	transform: rotate(45deg);
+}
+
+.wpcursor-guide-admission__grid {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+	gap: 1.5rem 2rem;
+	align-items: start;
+}
+
+.wpcursor-guide-admission__visual {
+	min-width: 0;
+}
+
+.wpcursor-guide-admission__visual-frame {
+	background: #f3f4f6;
+	border-radius: 14px;
+	padding: 1.25rem;
+	box-sizing: border-box;
+	box-shadow: 0 4px 20px rgba(6, 17, 58, 0.06);
+}
+
+.wpcursor-guide-admission__guide-image {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 12px 32px rgba(6, 17, 58, 0.15);
+}
+
+.wpcursor-guide-admission__guide-placeholder {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 280px;
+	padding: 1.5rem;
+	border-radius: 8px;
+	background: linear-gradient(145deg, #06113a 0%, #1e3a8a 100%);
+	box-shadow: 0 12px 32px rgba(6, 17, 58, 0.2);
+	text-align: center;
+}
+
+.wpcursor-guide-admission__guide-placeholder-title {
+	margin: 0 0 0.35rem;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.3;
+	color: #fff;
+	letter-spacing: 0.04em;
+}
+
+.wpcursor-guide-admission__guide-placeholder-sub {
+	margin: 0;
+	font-size: 0.8125rem;
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.85);
+}
+
+.wpcursor-guide-admission__form-col {
+	min-width: 0;
+}
+
+.wpcursor-guide-admission__form-embed .gform_wrapper,
+.wpcursor-guide-admission__form-embed form {
+	margin: 0 !important;
+}
+
+.wpcursor-guide-admission__form-demo {
+	margin: 0;
+}
+
+.wpcursor-guide-admission__form-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.65rem;
+	margin-bottom: 0.65rem;
+}
+
+.wpcursor-guide-admission__field {
+	margin: 0 0 0.65rem;
+}
+
+.wpcursor-guide-admission__input {
+	width: 100%;
+	padding: 0.85rem 1rem;
+	border: 1px solid #e2e6ec;
+	border-radius: 12px;
+	background: #fff;
+	font-size: 0.9375rem;
+	color: #06113a;
+	box-sizing: border-box;
+	box-shadow: 0 1px 2px rgba(6, 17, 58, 0.04);
+	transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.wpcursor-guide-admission__input:focus {
+	outline: none;
+	border-color: #8994bd;
+	box-shadow: 0 0 0 3px rgba(137, 148, 189, 0.22);
+}
+
+.wpcursor-guide-admission__cta-demo {
+	display: block;
+	width: 100%;
+	margin-top: 0.35rem;
+	padding: 0.85rem 1rem;
+	border-radius: 12px;
+	background: linear-gradient(180deg, #c42e2e 0%, #9b1c1c 100%);
+	color: #fff;
+	font-size: 0.9375rem;
+	font-weight: 700;
+	text-align: center;
+	box-shadow: 0 6px 0 #7a1515, 0 10px 20px rgba(155, 28, 28, 0.25);
+	box-sizing: border-box;
+}
+
+.wpcursor-guide-admission__form-hint {
+	margin: 0.75rem 0 0;
+	font-size: 0.6875rem;
+	line-height: 1.4;
+	color: #6b7280;
+	text-align: center;
+}
+
+.wpcursor-guide-admission__legal {
+	margin: 0.85rem 0 0;
+	font-size: 0.6875rem;
+	line-height: 1.45;
+	color: #6b7280;
+}
+
+.wpcursor-guide-admission__legal--demo {
+	margin-top: 0.65rem;
+}
+
+/* Gravity Forms — champs arrondis, style maquette */
+.wpcursor-guide-admission__form-embed .gform_wrapper {
+	margin: 0 !important;
+}
+
+.wpcursor-guide-admission__form-embed .gform_fields {
+	display: grid !important;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.65rem !important;
+}
+
+.wpcursor-guide-admission__form-embed .gfield {
+	margin: 0 !important;
+	padding: 0 !important;
+	grid-column: span 2;
+}
+
+.wpcursor-guide-admission__form-embed .gfield--width-half,
+.wpcursor-guide-admission__form-embed .gfield.gfield--width-half {
+	grid-column: span 1;
+}
+
+.wpcursor-guide-admission__form-embed .gfield_label {
+	display: none !important;
+}
+
+.wpcursor-guide-admission__form-embed .gform_body input[type="text"],
+.wpcursor-guide-admission__form-embed .gform_body input[type="email"],
+.wpcursor-guide-admission__form-embed .gform_body input[type="tel"],
+.wpcursor-guide-admission__form-embed .gform_body input[type="number"],
+.wpcursor-guide-admission__form-embed .gform_body select,
+.wpcursor-guide-admission__form-embed .gform_body textarea,
+.wpcursor-guide-admission__form-embed .gfield input.large,
+.wpcursor-guide-admission__form-embed .gfield select.large,
+.wpcursor-guide-admission__form-embed .gfield textarea.large,
+.wpcursor-guide-admission__form-embed input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]) {
+	width: 100% !important;
+	min-height: 48px !important;
+	border-radius: 12px !important;
+	border: 1px solid #e2e6ec !important;
+	padding: 0.85rem 1rem !important;
+	background: #fff !important;
+	font-size: 0.9375rem !important;
+	color: #06113a !important;
+	box-shadow: 0 1px 2px rgba(6, 17, 58, 0.04) !important;
+	box-sizing: border-box !important;
+	transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+.wpcursor-guide-admission__form-embed .gform_body input:focus,
+.wpcursor-guide-admission__form-embed .gform_body select:focus,
+.wpcursor-guide-admission__form-embed .gform_body textarea:focus,
+.wpcursor-guide-admission__form-embed input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):focus {
+	outline: none !important;
+	border-color: #8994bd !important;
+	box-shadow: 0 0 0 3px rgba(137, 148, 189, 0.22) !important;
+}
+
+.wpcursor-guide-admission__form-embed .gform_body input::placeholder,
+.wpcursor-guide-admission__form-embed .gform_body textarea::placeholder {
+	color: #9ca3af !important;
+	opacity: 1 !important;
+}
+
+.wpcursor-guide-admission__form-embed .gform_footer,
+.wpcursor-guide-admission__form-embed .gform_page_footer {
+	grid-column: 1 / -1;
+	margin: 0.35rem 0 0 !important;
+	padding: 0 !important;
+}
+
+.wpcursor-guide-admission__form-embed .gform_footer input[type="submit"],
+.wpcursor-guide-admission__form-embed .gform_page_footer input[type="submit"],
+.wpcursor-guide-admission__form-embed .gform_button {
+	width: 100% !important;
+	min-height: 48px !important;
+	border-radius: 12px !important;
+	background: linear-gradient(180deg, #c42e2e 0%, #9b1c1c 100%) !important;
+	border: 0 !important;
+	font-weight: 700 !important;
+	font-size: 0.9375rem !important;
+	padding: 0.85rem 1rem !important;
+	box-shadow: 0 6px 0 #7a1515, 0 10px 20px rgba(155, 28, 28, 0.25) !important;
+	cursor: pointer !important;
+}
+
+@media (max-width: 860px) {
+	.wpcursor-guide-admission__grid {
+		grid-template-columns: 1fr;
+		gap: 1.25rem;
+	}
+
+	.wpcursor-guide-admission__visual {
+		max-width: 420px;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.wpcursor-guide-admission__form-col {
+		max-width: 480px;
+		margin: 0 auto;
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.wpcursor-guide-admission__inner {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.wpcursor-guide-admission__heading {
+		font-size: 1.05rem;
+		text-align: left;
+		margin-bottom: 0.85rem;
+	}
+
+	.wpcursor-guide-admission__benefits {
+		justify-content: flex-start;
+		margin-bottom: 1.15rem;
+		gap: 0.45rem;
+	}
+
+	.wpcursor-guide-admission__benefit {
+		font-size: 0.75rem;
+		padding: 0.4rem 0.7rem;
+	}
+
+	.wpcursor-guide-admission__visual-frame {
+		padding: 1rem;
+	}
+
+	.wpcursor-guide-admission__form-row {
+		grid-template-columns: 1fr;
+	}
+
+	.wpcursor-guide-admission__form-embed .gform_fields {
+		grid-template-columns: 1fr !important;
+	}
+
+	.wpcursor-guide-admission__form-embed .gfield,
+	.wpcursor-guide-admission__form-embed .gfield--width-half,
+	.wpcursor-guide-admission__form-embed .gfield.gfield--width-half {
+		grid-column: span 1 !important;
+	}
+
+	.wpcursor-guide-admission__input {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 480px) {
+	.wpcursor-guide-admission__visual,
+	.wpcursor-guide-admission__form-col {
+		max-width: none;
+	}
+}

@@ -1,0 +1,8 @@
+# Modèle Divi — Coucou Edouard
+
+[wpcursor name="coucou-edouard"]
+text=coucou Edouard
+variant=light
+custom_html=
+custom_css=
+[/wpcursor]

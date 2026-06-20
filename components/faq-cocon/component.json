@@ -1,0 +1,71 @@
+{
+  "$schema": "wpcursor-component-v1",
+  "label": "FAQ tête de cocon",
+  "description": "Questions fréquentes en accordéon deux colonnes + CTA. Ajoutez faq1_question/faq1_answer, faq2_… jusqu'à faq20 (autant de paires que nécessaire).",
+  "version": "1.0.1",
+  "updated": "2026-06-03",
+  "props": {
+    "section_title": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-faq-cocon__heading"
+    },
+    "cta_text": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-faq-cocon__cta"
+    },
+    "cta_url": {
+      "type": "url",
+      "required": false
+    },
+    "allow_multiple_open": {
+      "type": "enum",
+      "values": ["yes", "no"],
+      "required": false,
+      "default": "no"
+    },
+    "faq1_question": { "type": "string", "required": false, "css_selector": ".wpcursor-faq-cocon__question-text" },
+    "faq1_answer": { "type": "string", "required": false, "css_selector": ".wpcursor-faq-cocon__answer" },
+    "faq2_question": { "type": "string", "required": false },
+    "faq2_answer": { "type": "string", "required": false },
+    "faq3_question": { "type": "string", "required": false },
+    "faq3_answer": { "type": "string", "required": false },
+    "faq4_question": { "type": "string", "required": false },
+    "faq4_answer": { "type": "string", "required": false },
+    "faq5_question": { "type": "string", "required": false },
+    "faq5_answer": { "type": "string", "required": false },
+    "faq6_question": { "type": "string", "required": false },
+    "faq6_answer": { "type": "string", "required": false },
+    "faq7_question": { "type": "string", "required": false },
+    "faq7_answer": { "type": "string", "required": false },
+    "faq8_question": { "type": "string", "required": false },
+    "faq8_answer": { "type": "string", "required": false },
+    "faq9_question": { "type": "string", "required": false },
+    "faq9_answer": { "type": "string", "required": false },
+    "faq10_question": { "type": "string", "required": false },
+    "faq10_answer": { "type": "string", "required": false },
+    "faq11_question": { "type": "string", "required": false },
+    "faq11_answer": { "type": "string", "required": false },
+    "faq12_question": { "type": "string", "required": false },
+    "faq12_answer": { "type": "string", "required": false },
+    "faq13_question": { "type": "string", "required": false },
+    "faq13_answer": { "type": "string", "required": false },
+    "faq14_question": { "type": "string", "required": false },
+    "faq14_answer": { "type": "string", "required": false },
+    "faq15_question": { "type": "string", "required": false },
+    "faq15_answer": { "type": "string", "required": false },
+    "faq16_question": { "type": "string", "required": false },
+    "faq16_answer": { "type": "string", "required": false },
+    "faq17_question": { "type": "string", "required": false },
+    "faq17_answer": { "type": "string", "required": false },
+    "faq18_question": { "type": "string", "required": false },
+    "faq18_answer": { "type": "string", "required": false },
+    "faq19_question": { "type": "string", "required": false },
+    "faq19_answer": { "type": "string", "required": false },
+    "faq20_question": { "type": "string", "required": false },
+    "faq20_answer": { "type": "string", "required": false },
+    "custom_html": { "type": "string", "required": false },
+    "custom_css": { "type": "string", "required": false }
+  }
+}

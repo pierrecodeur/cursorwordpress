@@ -1,0 +1,271 @@
+/**
+ * Accueil — admission (témoignages / carrousel).
+ */
+
+.wpcursor-accueil-admission {
+	box-sizing: border-box;
+	margin: 0 0 2rem;
+	color: #06113a;
+}
+
+.wpcursor-accueil-admission__frame {
+	position: relative;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 48px;
+	box-sizing: border-box;
+}
+
+.wpcursor-accueil-admission__viewport {
+	position: relative;
+	min-height: 1px;
+}
+
+.wpcursor-accueil-admission__slide[hidden] {
+	display: none !important;
+}
+
+.wpcursor-accueil-admission__card {
+	display: grid;
+	grid-template-columns: minmax(200px, 280px) 1fr;
+	gap: 2rem 2.5rem;
+	align-items: start;
+	background: #fff;
+	border-radius: 16px;
+	box-shadow: 0 8px 32px rgba(6, 17, 58, 0.1);
+	padding: 2rem 2.25rem;
+	box-sizing: border-box;
+}
+
+.wpcursor-accueil-admission__media {
+	margin: 0;
+}
+
+.wpcursor-accueil-admission__photo {
+	display: block;
+	width: 100%;
+	max-width: 280px;
+	height: auto;
+	min-height: 320px;
+	object-fit: cover;
+	border-radius: 14px;
+	box-shadow: 0 12px 28px rgba(6, 17, 58, 0.18);
+}
+
+.wpcursor-accueil-admission__photo--placeholder {
+	background: linear-gradient(145deg, #e8ecf1 0%, #d7dde5 100%);
+	min-height: 360px;
+}
+
+.wpcursor-accueil-admission__heading {
+	margin: 0 0 1.25rem;
+	font-size: clamp(1.35rem, 2.2vw, 1.65rem);
+	font-weight: 700;
+	line-height: 1.3;
+	color: #06113a;
+}
+
+.wpcursor-accueil-admission__subheading {
+	margin: 0 0 0.65rem;
+	font-size: 0.95rem;
+	font-weight: 700;
+	line-height: 1.45;
+	color: #06113a;
+}
+
+.wpcursor-accueil-admission__block {
+	margin: 0 0 1.25rem;
+	padding-bottom: 1.15rem;
+	border-bottom: 1px solid #e2e6ec;
+}
+
+.wpcursor-accueil-admission__block--results {
+	padding-bottom: 1rem;
+}
+
+.wpcursor-accueil-admission__list {
+	margin: 0;
+	padding: 0 0 0 1.15rem;
+	font-size: 0.92rem;
+	line-height: 1.6;
+	color: #4b5563;
+}
+
+.wpcursor-accueil-admission__list li {
+	margin: 0 0 0.45rem;
+}
+
+.wpcursor-accueil-admission__badges {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.65rem;
+}
+
+.wpcursor-accueil-admission__badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	margin: 0;
+	padding: 0.55rem 1rem 0.55rem 0.65rem;
+	background: #fff;
+	border: 1px solid #e2e6ec;
+	border-radius: 999px;
+	box-shadow: 0 1px 4px rgba(6, 17, 58, 0.06);
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.wpcursor-accueil-admission__badge-icon {
+	flex-shrink: 0;
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	background: #8b2942;
+	position: relative;
+}
+
+.wpcursor-accueil-admission__badge-icon::after {
+	content: "";
+	position: absolute;
+	left: 8px;
+	top: 5px;
+	width: 6px;
+	height: 11px;
+	border: solid #fff;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+
+.wpcursor-accueil-admission__badge-text {
+	font-size: 0.9rem;
+	line-height: 1.4;
+	color: #374151;
+}
+
+.wpcursor-accueil-admission__quote {
+	margin: 0.5rem 0 0;
+	padding: 0;
+	border: none;
+}
+
+.wpcursor-accueil-admission__quote p {
+	margin: 0;
+	font-size: 0.95rem;
+	font-style: italic;
+	line-height: 1.65;
+	color: #6b7280;
+}
+
+.wpcursor-accueil-admission__nav {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	border: 1px solid #d7dde5;
+	border-radius: 50%;
+	background: #fff;
+	color: #06113a;
+	font-size: 1.5rem;
+	line-height: 1;
+	cursor: pointer;
+	box-shadow: 0 2px 8px rgba(6, 17, 58, 0.08);
+	transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.wpcursor-accueil-admission__nav:hover,
+.wpcursor-accueil-admission__nav:focus-visible {
+	background: #f7f9fc;
+	border-color: #8b2942;
+	outline: none;
+}
+
+.wpcursor-accueil-admission__nav--prev {
+	left: 0;
+}
+
+.wpcursor-accueil-admission__nav--next {
+	right: 0;
+}
+
+.wpcursor-accueil-admission__pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin: 1.25rem auto 0;
+	padding: 0;
+	max-width: 1100px;
+}
+
+.wpcursor-accueil-admission__dot {
+	width: 10px;
+	height: 10px;
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+	background: #c5cdd8;
+	cursor: pointer;
+	transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.wpcursor-accueil-admission__dot:hover,
+.wpcursor-accueil-admission__dot:focus-visible {
+	background: #8b2942;
+	outline: none;
+	transform: scale(1.15);
+}
+
+.wpcursor-accueil-admission__dot.is-active {
+	background: #8b2942;
+	transform: scale(1.2);
+}
+
+.wpcursor-accueil-admission__dot .screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+@media (max-width: 768px) {
+	.wpcursor-accueil-admission__frame {
+		padding: 0 40px;
+	}
+
+	.wpcursor-accueil-admission__card {
+		grid-template-columns: 1fr;
+		gap: 1.25rem;
+		padding: 1.5rem 1.25rem;
+	}
+
+	.wpcursor-accueil-admission__photo,
+	.wpcursor-accueil-admission__photo--placeholder {
+		max-width: 100%;
+		min-height: 280px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 480px) {
+	.wpcursor-accueil-admission__frame {
+		padding: 0 36px;
+	}
+
+	.wpcursor-accueil-admission__nav {
+		width: 34px;
+		height: 34px;
+		font-size: 1.25rem;
+	}
+}

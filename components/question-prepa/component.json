@@ -1,0 +1,77 @@
+{
+  "$schema": "wpcursor-component-v1",
+  "label": "Une question sur la prépa",
+  "description": "Contact par email ou téléphone : toggle, carte formulaire Gravity Forms (form_id personnalisable) et liste d'arguments.",
+  "version": "1.0.1",
+  "updated": "2026-06-03",
+  "props": {
+    "section_title": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-question-prepa__heading"
+    },
+    "show_toggle": {
+      "type": "enum",
+      "values": ["yes", "no"],
+      "required": false,
+      "default": "yes"
+    },
+    "toggle_label_email": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-question-prepa__toggle-btn--email"
+    },
+    "toggle_label_phone": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-question-prepa__toggle-btn--phone"
+    },
+    "default_contact": {
+      "type": "enum",
+      "values": ["email", "phone"],
+      "required": false,
+      "default": "email"
+    },
+    "card_title": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-question-prepa__card-title"
+    },
+    "form_id": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-question-prepa__form-embed--email"
+    },
+    "form_id_phone": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-question-prepa__form-embed--phone"
+    },
+    "form_shortcode": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-question-prepa__form-embed--email"
+    },
+    "form_shortcode_phone": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-question-prepa__form-embed--phone"
+    },
+    "benefit1": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-question-prepa__benefit"
+    },
+    "benefit2": { "type": "string", "required": false },
+    "benefit3": { "type": "string", "required": false },
+    "benefit4": { "type": "string", "required": false },
+    "benefit5": { "type": "string", "required": false },
+    "legal_text": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-question-prepa__legal"
+    },
+    "custom_html": { "type": "string", "required": false },
+    "custom_css": { "type": "string", "required": false }
+  }
+}

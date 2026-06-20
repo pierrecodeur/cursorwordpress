@@ -1,0 +1,33 @@
+# Majors de promo — cartes classement (Prépa Médecine témoignages)
+# Titre affiché au-dessus de la grille ; laisser vide pour masquer.
+
+[wpcursor name="majors-promo"]
+heading_tag=h2
+section_title=Plusieurs majors de promo ont suivi notre prépa
+card1_rank=1re
+card1_name=Laetitia O
+card1_specialty=Médecine
+card1_institution=Université Catholique de Lille
+card1_badge_url=
+card1_badge_alt=Résultats prépa concours
+card2_rank=1re
+card2_name=Anais K
+card2_specialty=Médecine
+card2_institution=Université Antilles-Guyane
+card2_badge_url=
+card2_badge_alt=
+card3_rank=1re
+card3_name=Lou G
+card3_specialty=Médecine
+card3_institution=Université de Corse
+card3_badge_url=
+card3_badge_alt=
+card4_rank=2e
+card4_name=Evanshi K
+card4_specialty=Médecine
+card4_institution=Sorbonne Paris Nord
+card4_badge_url=
+card4_badge_alt=
+custom_html=
+custom_css=
+[/wpcursor]

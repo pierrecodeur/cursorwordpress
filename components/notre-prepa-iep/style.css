@@ -1,0 +1,195 @@
+/**
+ * Notre Prépa IEP — grille 2×2 lieux Paris / distance.
+ */
+
+.wpcursor-notre-prepa-iep {
+	box-sizing: border-box;
+	margin: 0 0 2rem;
+	padding: 2rem 0;
+	color: #06113a;
+	background: #f3f4f6;
+}
+
+.wpcursor-notre-prepa-iep__inner {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 1.25rem;
+	box-sizing: border-box;
+}
+
+.wpcursor-notre-prepa-iep__heading {
+	margin: 0 0 1.5rem;
+	font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+	font-weight: 700;
+	line-height: 1.35;
+	text-align: center;
+	color: #06113a;
+}
+
+.wpcursor-notre-prepa-iep__grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1rem;
+	align-items: stretch;
+}
+
+.wpcursor-notre-prepa-iep__card {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	border-radius: 16px;
+	min-height: 200px;
+	aspect-ratio: 16 / 10;
+	background: #1f2937;
+	box-shadow: 0 10px 28px rgba(6, 17, 58, 0.14);
+	text-decoration: none;
+	color: inherit;
+}
+
+.wpcursor-notre-prepa-iep__card--link {
+	-webkit-tap-highlight-color: transparent;
+	touch-action: manipulation;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.wpcursor-notre-prepa-iep__card--link {
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.wpcursor-notre-prepa-iep__card--link:hover,
+	.wpcursor-notre-prepa-iep__card--link:focus-visible {
+		transform: translateY(-2px);
+		box-shadow: 0 14px 32px rgba(6, 17, 58, 0.18);
+	}
+}
+
+.wpcursor-notre-prepa-iep__photo {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	display: block;
+}
+
+.wpcursor-notre-prepa-iep__photo--placeholder {
+	background: linear-gradient(160deg, #6b7280 0%, #374151 50%, #1f2937 100%);
+}
+
+.wpcursor-notre-prepa-iep__overlay {
+	position: absolute;
+	inset: auto 0 0 0;
+	padding: 2.25rem 1rem 0.9rem;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 55%, transparent 100%);
+	box-sizing: border-box;
+}
+
+.wpcursor-notre-prepa-iep__card-title {
+	margin: 0 0 0.25rem;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.3;
+	color: #fff;
+}
+
+.wpcursor-notre-prepa-iep__card-subtitle {
+	margin: 0;
+	font-size: 0.8125rem;
+	font-weight: 500;
+	line-height: 1.35;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+@media (max-width: 900px) {
+	.wpcursor-notre-prepa-iep__grid {
+		gap: 0.85rem;
+	}
+
+	.wpcursor-notre-prepa-iep__card {
+		border-radius: 14px;
+		min-height: 185px;
+	}
+}
+
+@media (max-width: 767px) {
+	.wpcursor-notre-prepa-iep {
+		margin-bottom: 1.5rem;
+		padding: 1.35rem 0 1.5rem;
+	}
+
+	.wpcursor-notre-prepa-iep__inner {
+		padding-left: max(1rem, env(safe-area-inset-left, 0px));
+		padding-right: max(1rem, env(safe-area-inset-right, 0px));
+	}
+
+	.wpcursor-notre-prepa-iep__heading {
+		margin-bottom: 1rem;
+		font-size: clamp(1.05rem, 4.8vw, 1.25rem);
+		line-height: 1.4;
+		text-align: left;
+		text-wrap: balance;
+		hyphens: auto;
+	}
+
+	.wpcursor-notre-prepa-iep__grid {
+		grid-template-columns: 1fr;
+		gap: 0.75rem;
+	}
+
+	.wpcursor-notre-prepa-iep__card {
+		min-height: 0;
+		aspect-ratio: 2.15 / 1;
+		border-radius: 12px;
+		box-shadow: 0 6px 18px rgba(6, 17, 58, 0.1);
+	}
+
+	.wpcursor-notre-prepa-iep__overlay {
+		padding: 1.65rem 0.9rem 0.8rem;
+		background: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.88) 0%,
+			rgba(0, 0, 0, 0.55) 58%,
+			transparent 100%
+		);
+	}
+
+	.wpcursor-notre-prepa-iep__card-title {
+		font-size: clamp(0.9375rem, 3.8vw, 1.0625rem);
+		line-height: 1.25;
+	}
+
+	.wpcursor-notre-prepa-iep__card-subtitle {
+		font-size: clamp(0.75rem, 3.2vw, 0.875rem);
+		line-height: 1.35;
+	}
+}
+
+@media (max-width: 480px) {
+	.wpcursor-notre-prepa-iep {
+		padding-top: 1.15rem;
+		padding-bottom: 1.25rem;
+	}
+
+	.wpcursor-notre-prepa-iep__grid {
+		gap: 0.65rem;
+	}
+
+	.wpcursor-notre-prepa-iep__card {
+		aspect-ratio: 2.05 / 1;
+	}
+
+	.wpcursor-notre-prepa-iep__overlay {
+		padding: 1.45rem 0.8rem 0.7rem;
+	}
+}
+
+@media (max-width: 360px) {
+	.wpcursor-notre-prepa-iep__heading {
+		font-size: 1rem;
+	}
+
+	.wpcursor-notre-prepa-iep__card {
+		aspect-ratio: 1.9 / 1;
+	}
+}

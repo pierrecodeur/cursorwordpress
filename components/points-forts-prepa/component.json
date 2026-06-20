@@ -1,0 +1,60 @@
+{
+  "$schema": "wpcursor-component-v1",
+  "label": "Points forts de la prépa",
+  "description": "Vidéo YouTube (lien + étiquette personnalisables), liste de points forts et CTA inscription.",
+  "version": "1.0.1",
+  "updated": "2026-06-03",
+  "props": {
+    "section_title": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-points-forts-prepa__heading-main"
+    },
+    "section_subtitle": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-points-forts-prepa__heading-sub"
+    },
+    "video_url": {
+      "type": "url",
+      "required": false
+    },
+    "video_etiquette": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-points-forts-prepa__video-etiquette"
+    },
+    "show_etiquette": {
+      "type": "enum",
+      "values": ["yes", "no"],
+      "required": false,
+      "default": "yes"
+    },
+    "video_caption": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-points-forts-prepa__video-caption"
+    },
+    "point1": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-points-forts-prepa__point"
+    },
+    "point2": { "type": "string", "required": false },
+    "point3": { "type": "string", "required": false },
+    "point4": { "type": "string", "required": false },
+    "point5": { "type": "string", "required": false },
+    "point6": { "type": "string", "required": false },
+    "cta_text": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-points-forts-prepa__cta"
+    },
+    "cta_url": {
+      "type": "url",
+      "required": false
+    },
+    "custom_html": { "type": "string", "required": false },
+    "custom_css": { "type": "string", "required": false }
+  }
+}

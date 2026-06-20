@@ -1,0 +1,55 @@
+{
+  "$schema": "wpcursor-component-v1",
+  "label": "Pourquoi suivre une prépa ?",
+  "description": "Section argumentaire : titre, CTA inscription, 3 cartes numérotées et lien En savoir plus.",
+  "version": "1.0.1",
+  "updated": "2026-06-03",
+  "props": {
+    "section_title": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-pourquoi-prepa__heading"
+    },
+    "cta_text": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-pourquoi-prepa__cta-top"
+    },
+    "cta_url": {
+      "type": "url",
+      "required": false
+    },
+    "card1_eyebrow": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-pourquoi-prepa__card-eyebrow"
+    },
+    "card1_title": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-pourquoi-prepa__card-title"
+    },
+    "card1_body": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-pourquoi-prepa__card-body"
+    },
+    "card2_eyebrow": { "type": "string", "required": false },
+    "card2_title": { "type": "string", "required": false },
+    "card2_body": { "type": "string", "required": false },
+    "card3_eyebrow": { "type": "string", "required": false },
+    "card3_title": { "type": "string", "required": false },
+    "card3_body": { "type": "string", "required": false },
+    "footer_link_text": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-pourquoi-prepa__footer-link"
+    },
+    "footer_link_url": {
+      "type": "url",
+      "required": false
+    },
+    "custom_html": { "type": "string", "required": false },
+    "custom_css": { "type": "string", "required": false }
+  }
+}

@@ -1,0 +1,32 @@
+# FAQ tête de cocon — jusqu'à 20 paires question/réponse
+
+[wpcursor name="faq-cocon"]
+section_title=Questions les plus fréquentes sur notre Prépa Sciences Po
+cta_text=S'inscrire à la prépa
+cta_url=
+allow_multiple_open=no
+faq1_question=À quoi sert-il de faire une prépa alors qu'il n'y pas de concours écrit pour Sciences Po Paris ?
+faq1_answer=La prépa vous aide à construire un dossier solide, à vous préparer aux épreuves orales et à développer la méthode et la culture générale attendues par Sciences Po.
+faq2_question=Quels sont les attendus et les pré-requis pour suivre la prépa Sciences Po ?
+faq2_answer=Une motivation forte pour les sciences humaines et sociales, un bon niveau scolaire et l'envie de travailler régulièrement sont les principaux pré-requis.
+faq3_question=Faut-il commencer la prépa Sciences Po en première ou en terminale ?
+faq3_answer=Les deux parcours sont possibles : la prépa en première permet d'anticiper Parcoursup et le bac ; en terminale, elle intensifie la préparation au concours et aux oraux.
+faq4_question=La prépa Sciences Po prépare-t-elle également au Bac ?
+faq4_answer=Oui, notre programme intègre une préparation au bac de français et un renforcement des matières clés du lycée.
+faq5_question=Quelle est la durée et le rythme des cours ?
+faq5_answer=Les cours ont lieu principalement le week-end, avec un accompagnement en ligne pour travailler à son rythme entre les sessions.
+faq6_question=Proposez-vous un accompagnement Parcoursup ?
+faq6_answer=Oui, un coaching Parcoursup est inclus pour vous aider à rédiger vos vœux, vos lettres de motivation et à préparer les entretiens.
+faq7_question=Peut-on suivre la prépa à distance ?
+faq7_answer=Oui, nos préparations en visio interactive permettent de suivre les cours en direct depuis chez soi.
+faq8_question=Y a-t-il des concours blancs pendant l'année ?
+faq8_answer=Des concours blancs et des exercices de préparation sont proposés pour vous entraîner dans des conditions proches du réel.
+faq9_question=Quel est l'effectif par classe ?
+faq9_answer=Les classes sont limitées à un effectif réduit pour garantir un suivi personnalisé de chaque élève.
+faq10_question=Comment s'inscrire à la prépa Sciences Po Cours Thalès ?
+faq10_answer=Remplissez le formulaire d'inscription en ligne ou contactez-nous : nous vous orienterons vers la formule la plus adaptée à votre profil.
+custom_html=
+custom_css=
+[/wpcursor]
+
+# Questions 11 à 20 : ajoutez faq11_question, faq11_answer, etc.

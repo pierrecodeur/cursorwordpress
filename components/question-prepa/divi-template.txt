@@ -1,0 +1,22 @@
+# Une question sur la prépa — contact email / téléphone
+
+[wpcursor name="question-prepa"]
+section_title=Une question sur notre préparation Sciences Po ? Ecrivez-nous !
+show_toggle=yes
+toggle_label_email=Par Email
+toggle_label_phone=Par téléphone
+default_contact=email
+card_title=Formulaire de demande de rappel
+form_id=
+form_id_phone=
+form_shortcode=
+form_shortcode_phone=
+benefit1=Échange gratuit et sans engagement
+benefit2=Réponse personnalisée à tes questions
+benefit3=Conseils concrets pour ton profil
+benefit4=Aucun démarchage commercial, juste des infos claires
+benefit5=Confidentialité garantie de tes coordonnées
+legal_text=En soumettant ce formulaire, vous acceptez que Cours Thalès utilise vos données pour vous recontacter dans le cadre de votre projet de prépa. Vous pouvez vous désinscrire à tout moment.
+custom_html=
+custom_css=
+[/wpcursor]

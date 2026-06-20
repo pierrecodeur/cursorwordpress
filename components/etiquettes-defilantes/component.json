@@ -1,0 +1,60 @@
+{
+  "$schema": "wpcursor-component-v1",
+  "label": "Étiquettes défilantes",
+  "description": "Bandeau double rangée de badges pill avec icône check, défilement horizontal infini.",
+  "version": "1.0.2",
+  "updated": "2026-06-03",
+  "props": {
+    "speed": {
+      "type": "enum",
+      "values": ["slow", "normal", "fast"],
+      "required": false,
+      "default": "normal"
+    },
+    "show_icon": {
+      "type": "enum",
+      "values": ["yes", "no"],
+      "required": false,
+      "default": "yes"
+    },
+    "item1": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-etiquettes-defilantes__label"
+    },
+    "item2": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-etiquettes-defilantes__label"
+    },
+    "item3": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-etiquettes-defilantes__label"
+    },
+    "item4": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-etiquettes-defilantes__label"
+    },
+    "item5": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-etiquettes-defilantes__label"
+    },
+    "item6": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-etiquettes-defilantes__label"
+    },
+    "custom_html": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-etiquettes-defilantes__custom-html"
+    },
+    "custom_css": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

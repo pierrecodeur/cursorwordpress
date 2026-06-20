@@ -1,0 +1,239 @@
+================================================================================
+PLUGIN WORDPRESS « WP CURSOR » (wpcursor)
+Chemin : wp-content/plugins/wpcursor/
+Version documentée : 1.7.x — Site type : WordPress + Divi + thème enfant
+================================================================================
+
+OBJECTIF
+--------
+Plugin maison pour :
+  • versionner avec Git / travailler avec Cursor sur des **fichiers PHP** (composants),
+  • exposer ces composants sur le site via **shortcodes** utilisables dans Divi (module Code, Texte, etc.),
+  • centraliser une **page d’admin** : liste des composants, usage des shortcodes, journal, opérations,
+  • **ne pas** remplacer Divi pour la mise en page : le builder reste pour le layout ; le plugin porte la logique / blocs réutilisables.
+
+Ce n’est **pas** une intégration officielle de l’application Cursor : il n’y a pas de chat Cursor dans WordPress.
+
+
+STRUCTURE DES FICHIERS
+----------------------
+wpcursor/
+  wpcursor.php              Point d’entrée : constantes, textdomain `wpcursor`, chargement includes, hooks init + admin, WP‑CLI
+  uninstall.php             Désinstallation : options/transients `wpcursor_*`, retire **manage_wpcursor** des **rôles core** (+ WooCommerce si présents) uniquement ; **ne supprime pas** components/, CHANGELOG.md, OPERATIONS.md, ni aucun rôle
+  languages/                Fichiers .mo / futur .pot (Domain Path)
+  includes/
+    logger.php              wpcursor_log() → debug.log avec préfixe [WP Cursor] (WP_DEBUG_LOG ou WPCURSOR_DEBUG)
+    component-schema.php    Lecture / validation optionnelle components/{slug}/component.json
+    component-loader.php    Rendu, runtime front|admin_preview|cli, inventaire
+    usage-scan.php          Scan post_content / postmeta ; transient **WPCURSOR_USAGE_SCAN_TRANSIENT** ; hooks invalidation auto cache (save_post, deleted_post, metas)
+    validate.php            Validation globale / par slug (CLI ; fichiers + contrat + usages)
+    rest-api.php            Routes REST lecture seule **wpcursor/v1** (+ permission_callback)
+    shortcodes.php          Classe WPCursor_Shortcodes : shortcodes + passage du contexte
+    capabilities.php        Cap manage_wpcursor : activation + migration
+    admin.php               Menu, onglets (dont Prévisualiser, Diagnostic), scan usage v2, copier contexte Cursor
+    cli.php                 Commandes wp wpcursor … (si WP‑CLI)
+  components/
+    example/
+      component.php         Exemple moderne ; tout fichier **slug/component.php** ou **slug.php** (legacy) doit commencer par la garde **ABSPATH** (voir components/README.md)
+  CHANGELOG.md              Journal technique des versions du plugin (affiché dans l’admin)
+  OPERATIONS.md             Historique des **demandes / livraisons** (une section ## par opération)
+
+Constantes utiles : WPCURSOR_VERSION, WPCURSOR_PATH, WPCURSOR_URL, WPCURSOR_CAP (manage_wpcursor),
+  WPCURSOR_USAGE_SCAN_TRANSIENT (clé du cache scan Utilisation),
+  WPCURSOR_RUNTIME_FRONT | ADMIN_PREVIEW | CLI (contexte de rendu dans $wpcursor_context['runtime'])
+
+
+SHORTCODES
+----------
+• [wpcursor name="slug" cle="valeur" cle_url="https://…"]
+  Charge **components/slug/component.php** si présent, sinon **components/slug.php**.
+  Slug en minuscules ; autres attributs → tableau **props** : filtre texte WordPress pour les chaînes, validation d’URL pour les clés *_url / url / href / link ; clés [a-z0-9_-]{1,64}. (En interne : API `sanitize_text_field` / `esc_url_raw`.)
+
+• [site_component …]
+  Alias historique — même comportement.
+
+Dans le fichier inclus : variable **`$wpcursor_context`** :
+  • **name**, **props**, **mode** (`legacy` | `modern`)
+  • **runtime** : **`front`** (pages réelles), **`admin_preview`** (onglet Prévisualiser), **`cli`** (`wp wpcursor render`)
+    → permet d’éviter animations / tracking hors production.
+
+Fichier optionnel **components/slug/component.json** : métadonnées **label**, **description**, **version**, **updated** (AAAA-MM-JJ) ; contrat **props** (**type** obligatoire string|url|enum, **enum.values** non vide, **required** booléen si présent).
+  Modèle et mode strict (front : props hors contrat ignorées dans le rendu + log ; admin / CLI : avertissements visibles) : **wp-content/plugins/wpcursor/components/README.md**.
+Validation au rendu (logs `[WP Cursor]` si problème) + colonne **Contrat / usage** dans l’admin (croisement avec les attributs vus dans le dernier scan Utilisation).
+
+Helper **`wpcursor_log($message, $context)`** : écrit dans **wp-content/debug.log** si `WP_DEBUG_LOG` && `WP_DEBUG`, ou si **`define('WPCURSOR_DEBUG', true);`** dans wp-config.php.
+
+Assets optionnels par dossier : **components/slug/style.css**, **script.js** (enqueue automatique une fois par slug).
+
+Sécurité du chargement : realpath + sous-arbre components/ uniquement.
+Tous les **.php** du plugin (**wpcursor.php**, **includes/***, **components/***) doivent inclure en tête : `if (!defined('ABSPATH')) { exit; }` (cf. **components/README.md**).
+
+
+COMMANDES WP‑CLI (SSH)
+----------------------
+Préfixe : **wp wpcursor …** (nécessite WP‑CLI ; scan usage peut être lourd sur grosses bases).
+
+  wp wpcursor list
+    Liste des composants : slug, type (modern|legacy), chemin relatif au plugin.
+
+  wp wpcursor components
+    Identique à **list** (nom historique).
+
+  wp wpcursor usage
+    Table des contenus utilisant le shortcode (post_content + postmeta).
+    Pagination : **--limit** défaut **200**, max **500** ; **--offset** défaut **0** ; **--limit=all** = tout afficher (scan lourd).
+    Colonnes : post_id, titre, type, statut, composants, sources.
+
+  wp wpcursor usage hero-home
+    Même scan filtré sur les entrées qui référencent le composant **hero-home** (après pagination).
+
+  wp wpcursor usage --limit=500 --offset=200
+    Page suivante (offset en nombre de lignes après tri par date de modification).
+
+  wp wpcursor diagnose
+    PHP, WordPress, thème, Divi/Woo indicatifs, WP_DEBUG, DISALLOW_FILE_EDIT, chemins, écriture components/.
+
+  wp wpcursor validate
+    Contrôle tous les composants : component.json (lisible, JSON, types props, enum+values, **updated** AAAA-MM-JJ),
+    **component.php** / slug présent, garde **ABSPATH**, rapport **style.css** / **script.js**, props utilisées dans
+    les pages hors contrat (scan comme l’onglet Utilisation). Résumé OK/WARN/ERROR par slug.
+
+  wp wpcursor validate hero-home
+    Idem pour un seul slug.
+
+  wp wpcursor render hero-home
+    Affiche le HTML du composant sur la sortie standard. Options en **--cle=valeur** (même filtrage texte / URL que le shortcode).
+
+  wp wpcursor flush-cache
+    Supprime le transient **WPCURSOR_USAGE_SCAN_TRANSIENT** (cache de l’onglet Utilisation).
+
+  Invalidation automatique (sans action manuelle) : à chaque **save_post**, **deleted_post**,
+    **added_post_meta**, **updated_post_meta**, **deleted_post_meta**, le plugin vide ce transient
+    pour éviter d’afficher une vue périmée après une sauvegarde Divi.
+
+  wp wpcursor context hero-home
+    Bloc texte prêt à coller dans Cursor : ligne « Composant », « Fichier » (chemin relatif à la racine WP),
+    « Shortcode », puis « Utilisé sur : » avec titres + ID des contenus détectés (ou message si aucune occurrence).
+
+  wp wpcursor context-site
+    Grand bloc « début de session » : URL du site, versions PHP/WP, thème, Divi / WooCommerce, liste des composants,
+    pages utilisant WP Cursor (scan à la volée), chemins ABSPATH / plugin / components, extrait **REPO/AGENTS.md** si trouvé.
+
+
+API REST (LECTURE SEULE — WordPress exige un permission_callback)
+------------------------------------------------------------------
+Namespace : **wp-json/wpcursor/v1/** — aucune méthode **POST**/écriture. Accès réservé aux utilisateurs authentifiés
+avec capability **manage_wpcursor** (401 si non connecté, 403 si droits insuffisants). Authentification typique :
+cookie session (admin connecté) ou mot de passe d’application WordPress pour scripts externes.
+
+  GET …/components
+    Liste des composants (inventaire + métadonnées component.json lorsque valides).
+
+  GET …/components/{slug}
+    Détail d’un slug : chemins résolus, **schema_state**, **manifest**, **props_schema**.
+
+  GET …/usage
+    Scan **post_content** + **postmeta** avec pagination query : **limit** défaut **200**, maximum **500** ; **offset** défaut **0**.
+    Pas de paramètre **page** : utiliser **offset**. Réponse **scan** : **rows**, **total_rows**, **meta_hits**, **meta_distinct_cap**
+    (plafond SQL DISTINCT sur les post_id trouvés dans postmeta — surcharge possible sur très gros sites).
+
+  GET …/diagnostic
+    Paires clé/valeur équivalentes à l’onglet Diagnostic (versions, chemins, indicateurs).
+
+  GET …/context/{slug}
+    JSON structuré (fichier relatif, shortcode, liste **used_on** avec post_id / titre / liens).
+    Basé sur un **scan complet** des lignes (sans pagination **limit** du endpoint **/usage**) pour ce filtrage par slug ;
+    la découverte brute via postmeta reste soumise au plafond **meta_distinct_cap** (voir **/usage**).
+
+
+PAGE D’ADMINISTRATION (menu « WP Cursor »)
+------------------------------------------
+Réservé aux utilisateurs avec la capability **manage_wpcursor** (attribuée au rôle administrator à l’activation du plugin ; tu peux l’ajouter à un rôle personnalisé pour un accès technique sans `manage_options`).
+
+Onglets typiques :
+  1) Composants
+     Inventaire legacy (slug.php) et dossiers (slug/component.php + **component.json** optionnel) : colonne **Contrat / usage**
+     (OK, component.json invalide, props du scan absentes du schéma, etc.), shortcode, lien **Prévisualiser** (nonce),
+     dernière modification.
+
+  2) Utilisation sur le site
+     Scan détaillé (sources post_content / post_meta, composants extraits, lien front), cache transient **WPCURSOR_USAGE_SCAN_TRANSIENT**
+     (TTL 5 min ; **invalidé automatiquement** après enregistrement de contenu ou de metas — hooks WordPress),
+     bouton **Copier contexte Cursor** (presse-papiers). Affichage limité à **200** lignes par défaut après tri (voir REST pour pagination).
+
+  3) Prévisualiser — runtime **`admin_preview`** dans **`$wpcursor_context`**.
+     **manage_wpcursor** uniquement ; **nonce** obligatoire ; pas de page publique ni d’indexation ;
+     erreurs PHP capturées **visibles seulement dans l’admin** ; les composants doivent éviter **tracking / analytics / appels externes**
+     lorsque `runtime === 'admin_preview'` (voir **components/README.md** et **example/component.php**).
+     URL type : `wp-admin/admin.php?page=wpcursor&tab=preview&component=slug&_wpnonce=…`
+     Formulaire : **options / propriétés** (lignes **clé=valeur** ou JSON) ; rendu HTML dans un bac à sable ;
+     liste des assets **wpcursor-cpt-*** enregistrés pour ce rendu ; avertissements schéma **component.json** si besoin.
+
+  4) Diagnostic
+     PHP, WordPress, thème, Divi/Woo indicatifs, WP_DEBUG, DISALLOW_FILE_EDIT, chemins, écriture components/, indication .git.
+
+  5) Journal des changements
+     Affichage brut de CHANGELOG.md du plugin.
+
+  6) Opérations effectuées
+     Lecture de OPERATIONS.md : entrées « ## AAAA-MM-JJ — Titre » + corps ; tri **du plus récent au plus ancien**.
+     Le préambule du fichier (modèle + instructions) s’affiche dans un panneau repliable ; les sections **Commit:** et **Rollback:**
+     du corps sont mises en évidence pour retrouver vite comment annuler une livraison.
+
+  7) Thème enfant
+     Liste des fichiers php/css/js du thème actif (divi-child) avec dates, lien vers l’éditeur de thème si autorisé ;
+     aperçu des **dernières lignes de style.css** ; encadré rappelant qu’on ne peut pas embarquer le chat Cursor dans l’admin.
+
+Cas Divi / contenu page : les textes des modules (accordéons, textes) sont dans **post_content** des pages — pas dans ce plugin. Pour modifier du texte stocké par Divi, il faut la **bonne page (post_id)** en base ou l’éditeur Divi (voir cas justification accordéon sur page parent vs enfant).
+
+
+FICHIERS DE SUIVI DANS LE PLUGIN
+--------------------------------
+• CHANGELOG.md      — versions, évolutions techniques du plugin (affiché dans l’admin).
+• OPERATIONS.md     — à chaque livraison : entrée « ## date — titre » ; format conseillé avec **Status**, **Composants**, **Pages**,
+                   **Tests**, **Commit** (hash ou référence Git), **Rollback** (commandes `git checkout …` ou procédure manuelle).
+                   L’admin met **Commit** et **Rollback** en encadrés ; le préambule du fichier (instructions + modèle) est affiché en haut de l’onglet.
+
+
+CE QUE LE PLUGIN NE FAIT PAS
+----------------------------
+• Pas d’API Cursor, pas de chat IA dans le tableau de bord.
+• Pas de modification automatique du contenu éditorial Divi en base : sauf scripts/outils séparés.
+• Pas de remplacement de WooCommerce, des réglages Divi globaux, etc., sans extension du code.
+
+WooCommerce (si une évolution y touche)
+----------------------------------------
+Toute manipulation de données WooCommerce doit passer par les **APIs / CRUD** (`WC_Order`, `WC_Product`, `WC_Customer`, data stores, REST API), **jamais** par SQL direct sur les tables commandes, produits ou **HPOS**. Voir **REPO/AGENTS.md**.
+
+
+PISTES D’AMÉLIORATION
+---------------------
+Voir **REPO/ROADMAP.md** (futures évolutions uniquement).  
+Pour du texte « dans la base » (HTML Divi) : toujours identifier le **post_id** qui porte le shortcode/layout — piège fréquent parent/enfant.
+
+
+SÉCURITÉ / HÉBERGEMENT
+----------------------
+• Le dossier REPO/ et .git ne doivent pas être exposés en HTTP (règles .htaccess à la racine du site + REPO/.htaccess).
+• Ne pas versionner de secrets dans OPERATIONS.md / CHANGELOG.
+
+
+DOCUMENTATION COMPLÉMENTAIRE (dossier REPO/)
+---------------------------------------------
+• **README.md** — Vue d’ensemble du dépôt REPO + **état actuel WP Cursor V1.7.x**.
+• **ROADMAP.md** — Améliorations **futures** uniquement (évite les doublons avec ce fichier).
+• **AGENTS.md** — Consignes courtes pour Cursor / assistants IA.
+
+CHANGELOG.md et OPERATIONS.md : à la racine du plugin **wpcursor/** (affichés dans l’admin WordPress).
+
+
+RAPPEL COURT POUR UN ASSISTANT (ChatGPT, Cursor, etc.)
+------------------------------------------------------
+Voir **REPO/AGENTS.md** pour la version à jour ; résumé : plugin local **wpcursor**, shortcodes
+**[wpcursor name="slug"]**, pas de chat Cursor dans WP ; admin pour inventaire, usage, diagnostic ;
+_capability_ **manage_wpcursor** ; échappement obligatoire dans les composants ; bon **post_id** pour le contenu Divi.
+
+
+================================================================================
+Fin — référence technique WP Cursor V1.7.x (plugin wpcursor).
+================================================================================

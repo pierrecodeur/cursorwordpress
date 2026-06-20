@@ -1,0 +1,131 @@
+{
+  "$schema": "wpcursor-component-v1",
+  "label": "Hero entête de cocon",
+  "description": "Hero deux colonnes sous le header des pages cocon : badge, titre, avis Google, stats, carte formulaire et CTA téléphone. Bas en chevron.",
+  "version": "1.0.5",
+  "updated": "2026-06-03",
+  "props": {
+    "heading_tag": {
+      "type": "enum",
+      "values": ["h1", "h2", "h3", "p"],
+      "required": false,
+      "default": "h1",
+      "css_selector": ".wpcursor-hero-entete-cocon__title"
+    },
+    "badge": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-entete-cocon__badge"
+    },
+    "title": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-entete-cocon__title"
+    },
+    "intro": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-entete-cocon__intro"
+    },
+    "show_reviews": {
+      "type": "enum",
+      "values": ["yes", "no"],
+      "required": false,
+      "default": "yes"
+    },
+    "reviews_rating": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-entete-cocon__reviews-rating"
+    },
+    "reviews_count": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-entete-cocon__reviews-count"
+    },
+    "reviews_url": {
+      "type": "url",
+      "required": false
+    },
+    "stat1_value": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-entete-cocon__stat-value"
+    },
+    "stat1_label": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-entete-cocon__stat-label"
+    },
+    "stat2_value": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-entete-cocon__stat-value"
+    },
+    "stat2_label": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-entete-cocon__stat-label"
+    },
+    "form_title": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-entete-cocon__form-title"
+    },
+    "select1_label": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-entete-cocon__field-label"
+    },
+    "select1_placeholder": {
+      "type": "string",
+      "required": false
+    },
+    "select2_label": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-entete-cocon__field-label"
+    },
+    "select2_placeholder": {
+      "type": "string",
+      "required": false
+    },
+    "form_action_url": {
+      "type": "url",
+      "required": false
+    },
+    "form_id": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-entete-cocon__form-embed"
+    },
+    "form_shortcode": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-entete-cocon__form-embed"
+    },
+    "phone": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-entete-cocon__phone-link"
+    },
+    "phone_url": {
+      "type": "url",
+      "required": false
+    },
+    "phone_caption": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-entete-cocon__phone-caption"
+    },
+    "custom_html": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-hero-entete-cocon__custom-html"
+    },
+    "custom_css": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

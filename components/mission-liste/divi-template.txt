@@ -1,0 +1,14 @@
+# Modèle à coller dans Divi (module Code)
+# Modifiez uniquement le texte APRÈS le signe =
+# Lignes commençant par # sont ignorées
+
+[wpcursor name="mission-liste"]
+heading_tag=h2
+title=La mission de Cours Thalès : accompagner avec bienveillance vers l'excellence
+intro=Un élève motivé doit pouvoir compter sur une multitude d'outils pour atteindre son objectif : cours et supports de haut niveau, méthodes, expertises… il s'agit de savoir transmettre ces petites (et grandes) choses qui font la différence entre un bon élève et un élève qui réussit.
+item1=Garantir un juste équilibre entre efficacité, bienveillance et exigence pour que chacune de nos préparations permette d'atteindre le meilleur niveau possible. Pour cela tous nos cours sont dispensés avec des effectifs réduits pour permettre aux enseignants de s'adapter aux besoins des élèves et d'être disponibles. Nos tuteurs tissent un lien de proximité et jouent le rôle de conseiller et de soutien moral pour les élèves.
+item2=Offrir une tranquillité d'esprit que ce soit aux élèves en leur permettant d'avoir confiance en eux en se sentant préparés, et aux familles qui nous confie leur enfant, en les informant et en les accompagnant.
+item3=Partager une expertise pour transmettre les « règles du jeu » qui feront la différence (méthodes, codes et usages…). La sélectivité des filières auxquelles nous préparons nécessite d'y être extrêmement bien préparé et de connaître les « trucs & astuces » de l'intérieur. Nos professeurs sont tous experts des filières auxquelles ils préparent.
+custom_html=
+custom_css=
+[/wpcursor]

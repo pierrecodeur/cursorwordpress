@@ -1,0 +1,25 @@
+# Réunion d'info gratuite — modèle Sciences Po
+# Formulaire Gravity Forms : form_id=XX
+
+[wpcursor name="reunion-info-gratuite"]
+heading_tag=h2
+form_title=Trouvez la prépa qui vous correspond
+form_id=
+form_shortcode=
+eyebrow=Une question ?
+title=Réunion d'information gratuite :
+subtitle=Comprendre et intégrer Sciences Po
+event_date=Jeudi 6 novembre à 18h30
+event_location=En vision conférence
+event_duration=Pendant 60min
+program_title=Au programme :
+program1=Qu'est ce que Sciences Po ?
+program2=Les épreuves du Concours Commun des IEP
+program3=Les épreuves de Sciences Po Paris
+program4=Les épreuves du Baccalauréat
+program5=Les épreuves orales
+cta_text=S'inscrire à la réunion d'information
+cta_url=
+custom_html=
+custom_css=
+[/wpcursor]

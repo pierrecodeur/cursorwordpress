@@ -1,0 +1,358 @@
+/**
+ * Témoignages prépa — carrousel navy.
+ */
+
+.wpcursor-temoignages-prepa {
+	box-sizing: border-box;
+	position: relative;
+	margin: 0;
+	padding: 2.25rem 0 2rem;
+	background: #06113a;
+	color: #fff;
+}
+
+.wpcursor-temoignages-prepa--chevron {
+	padding-bottom: 2.75rem;
+	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 44px), 50% 100%, 0 calc(100% - 44px));
+}
+
+.wpcursor-temoignages-prepa__inner {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 1.25rem 1.5rem;
+	box-sizing: border-box;
+}
+
+.wpcursor-temoignages-prepa__heading {
+	margin: 0 0 1.5rem;
+	max-width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: clamp(1.1rem, 2.3vw, 1.4rem);
+	font-weight: 700;
+	line-height: 1.4;
+	text-align: center;
+	color: #fff;
+}
+
+.wpcursor-temoignages-prepa__frame {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.wpcursor-temoignages-prepa__viewport {
+	flex: 1;
+	min-width: 0;
+}
+
+.wpcursor-temoignages-prepa__slide[hidden] {
+	display: none !important;
+}
+
+.wpcursor-temoignages-prepa__grid {
+	display: grid;
+	grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+	gap: 1.25rem 2rem;
+	align-items: center;
+}
+
+.wpcursor-temoignages-prepa__media {
+	min-width: 0;
+}
+
+.wpcursor-temoignages-prepa__media-wrap {
+	position: relative;
+	border-radius: 16px;
+	overflow: hidden;
+	background: #111827;
+	box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+}
+
+.wpcursor-temoignages-prepa__media-wrap::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	height: 56px;
+	background: linear-gradient(to top, rgba(6, 17, 58, 0.82) 0%, rgba(6, 17, 58, 0.35) 55%, transparent 100%);
+	pointer-events: none;
+}
+
+.wpcursor-temoignages-prepa__video-ratio {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	background: #000;
+}
+
+.wpcursor-temoignages-prepa__iframe {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.wpcursor-temoignages-prepa__photo {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+}
+
+.wpcursor-temoignages-prepa__media-placeholder {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	background: linear-gradient(145deg, #1e3a8a 0%, #111827 100%);
+}
+
+.wpcursor-temoignages-prepa__play-icon {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 56px;
+	height: 40px;
+	margin: -20px 0 0 -28px;
+	border-radius: 10px;
+	background: #ff0000;
+}
+
+.wpcursor-temoignages-prepa__play-icon::after {
+	content: "";
+	position: absolute;
+	left: 22px;
+	top: 10px;
+	border-style: solid;
+	border-width: 10px 0 10px 16px;
+	border-color: transparent transparent transparent #fff;
+}
+
+.wpcursor-temoignages-prepa__etiquette {
+	position: absolute;
+	top: 14px;
+	left: 14px;
+	z-index: 3;
+	margin: 0;
+	padding: 0.5rem 0.9rem;
+	max-width: calc(100% - 28px);
+	border-radius: 10px;
+	background: #7eb0e8;
+	color: #fff;
+	font-size: 0.75rem;
+	font-weight: 700;
+	line-height: 1.3;
+	box-sizing: border-box;
+	box-shadow: 0 4px 14px rgba(6, 17, 58, 0.22);
+}
+
+.wpcursor-temoignages-prepa__caption {
+	position: absolute;
+	left: 14px;
+	bottom: 14px;
+	z-index: 2;
+	margin: 0;
+	max-width: calc(100% - 110px);
+	font-size: 0.6875rem;
+	font-weight: 600;
+	line-height: 1.35;
+	color: #fff;
+}
+
+.wpcursor-temoignages-prepa__logo,
+.wpcursor-temoignages-prepa__logo-text {
+	position: absolute;
+	right: 14px;
+	bottom: 14px;
+	z-index: 2;
+}
+
+.wpcursor-temoignages-prepa__logo {
+	max-width: 72px;
+	height: auto;
+}
+
+.wpcursor-temoignages-prepa__logo-text {
+	margin: 0;
+	font-size: 0.6875rem;
+	font-weight: 700;
+	line-height: 1.2;
+	color: #fff;
+	opacity: 0.95;
+}
+
+.wpcursor-temoignages-prepa__content {
+	min-width: 0;
+	padding: 0.25rem 0;
+}
+
+.wpcursor-temoignages-prepa__quote {
+	margin: 0 0 0.85rem;
+	padding: 0;
+	border: 0;
+	font-size: 0.9rem;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 1.6;
+	color: rgba(255, 255, 255, 0.96);
+}
+
+.wpcursor-temoignages-prepa__quote p {
+	margin: 0;
+}
+
+.wpcursor-temoignages-prepa__author {
+	margin: 0 0 1.1rem;
+	font-size: 0.9rem;
+	font-weight: 700;
+	font-style: normal;
+	line-height: 1.4;
+	color: #fff;
+}
+
+.wpcursor-temoignages-prepa__cta {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.8rem 1.35rem;
+	border-radius: 12px;
+	background: linear-gradient(180deg, #c42e2e 0%, #9b1c1c 100%);
+	color: #fff !important;
+	font-size: 0.875rem;
+	font-weight: 700;
+	line-height: 1.3;
+	text-decoration: none !important;
+	box-shadow: 0 6px 0 #7a1515, 0 10px 20px rgba(0, 0, 0, 0.25);
+	transition: transform 0.15s ease;
+}
+
+.wpcursor-temoignages-prepa__cta:hover,
+.wpcursor-temoignages-prepa__cta:focus-visible {
+	color: #fff !important;
+	transform: translateY(-1px);
+}
+
+.wpcursor-temoignages-prepa__cta--static {
+	cursor: default;
+}
+
+.wpcursor-temoignages-prepa__nav {
+	flex-shrink: 0;
+	width: 36px;
+	height: 36px;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background: transparent;
+	cursor: pointer;
+}
+
+.wpcursor-temoignages-prepa__nav span {
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 auto;
+	border: solid rgba(255, 255, 255, 0.85);
+	border-width: 0 2px 2px 0;
+}
+
+.wpcursor-temoignages-prepa__nav--prev span {
+	transform: rotate(135deg);
+	margin-left: 14px;
+}
+
+.wpcursor-temoignages-prepa__nav--next span {
+	transform: rotate(-45deg);
+	margin-right: 14px;
+}
+
+.wpcursor-temoignages-prepa__nav:focus-visible {
+	outline: 2px solid #fff;
+	outline-offset: 2px;
+}
+
+.wpcursor-temoignages-prepa__pagination {
+	display: flex;
+	justify-content: center;
+	gap: 0.45rem;
+	margin-top: 1rem;
+}
+
+.wpcursor-temoignages-prepa__dot {
+	width: 8px;
+	height: 8px;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.35);
+	cursor: pointer;
+	transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.wpcursor-temoignages-prepa__dot.is-active {
+	background: #fff;
+	transform: scale(1.15);
+}
+
+
+@media (max-width: 860px) {
+	.wpcursor-temoignages-prepa__grid {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+
+	.wpcursor-temoignages-prepa__media {
+		max-width: 520px;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.wpcursor-temoignages-prepa__nav {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.wpcursor-temoignages-prepa {
+		padding-top: 1.75rem;
+	}
+
+	.wpcursor-temoignages-prepa__inner {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		padding-bottom: 1.15rem;
+	}
+
+	.wpcursor-temoignages-prepa__heading {
+		text-align: left;
+		font-size: 1.05rem;
+		margin-bottom: 1.15rem;
+		max-width: none;
+	}
+
+	.wpcursor-temoignages-prepa__quote {
+		font-size: 0.8125rem;
+	}
+
+	.wpcursor-temoignages-prepa__author {
+		font-size: 0.8125rem;
+	}
+
+	.wpcursor-temoignages-prepa__cta {
+		width: 100%;
+	}
+
+	.wpcursor-temoignages-prepa__media {
+		max-width: none;
+	}
+
+	.wpcursor-temoignages-prepa--chevron {
+		padding-bottom: 2.25rem;
+		clip-path: polygon(0 0, 100% 0, 100% calc(100% - 32px), 50% 100%, 0 calc(100% - 32px));
+	}
+}

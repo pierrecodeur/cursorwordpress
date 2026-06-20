@@ -1,0 +1,20 @@
+# Points forts de la prépa — vidéo YouTube + étiquette
+
+[wpcursor name="points-forts-prepa"]
+section_title=Les points forts de la Prépa
+section_subtitle=Sciences Po de Cours Thalès
+video_url=
+video_etiquette=La Prépa Sciences Po Cours Thalès
+show_etiquette=yes
+video_caption=Découvrez en vidéo notre approche pour intégrer Sciences Po.
+point1=Nos méthodes pédagogiques innovantes, garanties d'une réussite scolaire et universitaire
+point2=Des supports de cours préparés par les meilleurs professeurs
+point3=Des exercices de préparation inclus (Bac blanc et Concours blanc)
+point4=Notre coaching Parcoursup pour passer cette phase stressante en toute sérénité
+point5=Une plateforme digitale de e-learning pour travailler et s'entraîner à son rythme
+point6=Nos préparations en visio interactive : des cours en direct
+cta_text=S'inscrire à la prépa
+cta_url=
+custom_html=
+custom_css=
+[/wpcursor]

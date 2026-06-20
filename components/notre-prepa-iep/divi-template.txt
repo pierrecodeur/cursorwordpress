@@ -1,0 +1,29 @@
+# Notre Prépa IEP — lieux Paris et à distance
+
+[wpcursor name="notre-prepa-iep"]
+section_title=Notre Prépa IEP est disponible à Paris ou à distance
+card1_image_url=
+card1_image_alt=Lycée Stanislas, Paris 6e
+card1_title=Stanislas
+card1_subtitle=Lycée - 6e arrondissement de Paris
+card1_url=
+card2_image_url=
+card2_image_alt=Lycée Fénelon Sainte-Marie, Paris 8e
+card2_title=Fénelon Sainte-Marie
+card2_subtitle=Lycée - 8e arrondissement de Paris
+card2_url=
+card3_image_url=
+card3_image_alt=Lycée Saint-Thomas d'Aquin, Paris 7e
+card3_title=Saint-Thomas d'Aquin
+card3_subtitle=Lycée - 7e arrondissement de Paris
+card3_url=
+card4_image_url=
+card4_image_alt=Prépa en visioconférence
+card4_title=Depuis chez vous
+card4_subtitle=En visioconférence
+card4_url=
+custom_html=
+custom_css=
+[/wpcursor]
+
+# Cartes 5 à 8 : card5_image_url, card5_title, card5_subtitle, card5_url, etc.

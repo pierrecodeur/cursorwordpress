@@ -1,0 +1,87 @@
+{
+  "$schema": "wpcursor-component-v1",
+  "label": "Des ressources",
+  "description": "Liste de liens ressources + lecteur Spotify (URL, vignette, titre). Ajoutez resource1_text/resource1_url … resource15_.",
+  "version": "1.0.0",
+  "updated": "2026-06-03",
+  "props": {
+    "section_title": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-des-ressources__heading"
+    },
+    "intro_text": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-des-ressources__intro"
+    },
+    "spotify_url": {
+      "type": "url",
+      "required": false
+    },
+    "spotify_embed_url": {
+      "type": "url",
+      "required": false
+    },
+    "spotify_vignette_url": {
+      "type": "url",
+      "required": false,
+      "css_selector": ".wpcursor-des-ressources__spotify-vignette"
+    },
+    "spotify_vignette_alt": {
+      "type": "string",
+      "required": false
+    },
+    "spotify_title": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-des-ressources__spotify-title"
+    },
+    "spotify_meta": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-des-ressources__spotify-meta"
+    },
+    "spotify_save_label": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-des-ressources__spotify-save"
+    },
+    "audio_url": {
+      "type": "url",
+      "required": false
+    },
+    "resource1_text": { "type": "string", "required": false, "css_selector": ".wpcursor-des-ressources__link" },
+    "resource1_url": { "type": "url", "required": false },
+    "resource2_text": { "type": "string", "required": false },
+    "resource2_url": { "type": "url", "required": false },
+    "resource3_text": { "type": "string", "required": false },
+    "resource3_url": { "type": "url", "required": false },
+    "resource4_text": { "type": "string", "required": false },
+    "resource4_url": { "type": "url", "required": false },
+    "resource5_text": { "type": "string", "required": false },
+    "resource5_url": { "type": "url", "required": false },
+    "resource6_text": { "type": "string", "required": false },
+    "resource6_url": { "type": "url", "required": false },
+    "resource7_text": { "type": "string", "required": false },
+    "resource7_url": { "type": "url", "required": false },
+    "resource8_text": { "type": "string", "required": false },
+    "resource8_url": { "type": "url", "required": false },
+    "resource9_text": { "type": "string", "required": false },
+    "resource9_url": { "type": "url", "required": false },
+    "resource10_text": { "type": "string", "required": false },
+    "resource10_url": { "type": "url", "required": false },
+    "resource11_text": { "type": "string", "required": false },
+    "resource11_url": { "type": "url", "required": false },
+    "resource12_text": { "type": "string", "required": false },
+    "resource12_url": { "type": "url", "required": false },
+    "resource13_text": { "type": "string", "required": false },
+    "resource13_url": { "type": "url", "required": false },
+    "resource14_text": { "type": "string", "required": false },
+    "resource14_url": { "type": "url", "required": false },
+    "resource15_text": { "type": "string", "required": false },
+    "resource15_url": { "type": "url", "required": false },
+    "custom_html": { "type": "string", "required": false },
+    "custom_css": { "type": "string", "required": false }
+  }
+}

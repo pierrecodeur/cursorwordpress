@@ -1,0 +1,21 @@
+# Modèle Divi — Accueil admission (témoignage élève admis)
+# Remplacez image_url par l’URL de la photo (Médiathèque WordPress).
+# Slide 2 / 3 : dupliquez les clés avec le préfixe slide2_ ou slide3_
+
+[wpcursor name="accueil-admission"]
+heading_tag=h2
+image_url=
+image_alt=Portrait de Marie
+heading=Marie, Admise à Sciences Po
+subheading_tag=h3
+problems_title=Problématiques & difficultés rencontrées dans son parcours pour Sciences Po :
+problem1=Méconnaissance des attentes du concours et du rythme de travail exigé en prépa.
+problem2=Difficultés à structurer ses révisions et à gérer le stress avant les épreuves.
+problem3=Besoin de méthode pour la dissertation, l'épreuve d'histoire et la culture générale.
+results_title=Résultats et réussites après la prépa Sciences Po Cours Thalès :
+result1=Admise à Sciences Po Paris en 2023
+result2=Progression régulière aux concours blancs tout au long de l'année
+quote=« Cours Thalès m'a donné une méthode claire et un accompagnement humain. J'ai gagné en confiance et j'ai abordé le concours sereinement. »
+custom_html=
+custom_css=
+[/wpcursor]

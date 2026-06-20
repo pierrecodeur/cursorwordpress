@@ -1,0 +1,109 @@
+{
+  "$schema": "wpcursor-component-v1",
+  "label": "Réunion d'info gratuite",
+  "description": "Bloc deux colonnes : formulaire quiz (Gravity Forms) à gauche, détails réunion d'information et CTA à droite.",
+  "version": "1.0.1",
+  "updated": "2026-06-03",
+  "props": {
+    "heading_tag": {
+      "type": "enum",
+      "values": ["h1", "h2", "h3", "p"],
+      "required": false,
+      "default": "h2",
+      "css_selector": ".wpcursor-reunion-info-gratuite__title"
+    },
+    "form_title": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-reunion-info-gratuite__form-title"
+    },
+    "form_id": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-reunion-info-gratuite__form-embed"
+    },
+    "form_shortcode": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-reunion-info-gratuite__form-embed"
+    },
+    "eyebrow": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-reunion-info-gratuite__eyebrow"
+    },
+    "title": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-reunion-info-gratuite__title"
+    },
+    "subtitle": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-reunion-info-gratuite__subtitle"
+    },
+    "event_date": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-reunion-info-gratuite__meta-text"
+    },
+    "event_location": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-reunion-info-gratuite__meta-text"
+    },
+    "event_duration": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-reunion-info-gratuite__meta-text"
+    },
+    "program_title": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-reunion-info-gratuite__program-title"
+    },
+    "program1": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-reunion-info-gratuite__program-list li"
+    },
+    "program2": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-reunion-info-gratuite__program-list li"
+    },
+    "program3": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-reunion-info-gratuite__program-list li"
+    },
+    "program4": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-reunion-info-gratuite__program-list li"
+    },
+    "program5": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-reunion-info-gratuite__program-list li"
+    },
+    "cta_text": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-reunion-info-gratuite__cta"
+    },
+    "cta_url": {
+      "type": "url",
+      "required": false
+    },
+    "custom_html": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-reunion-info-gratuite__custom-html"
+    },
+    "custom_css": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

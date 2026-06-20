@@ -1,0 +1,32 @@
+# Hero entête de cocon — modèle Sciences Po (pages silo)
+# Coller dans Divi : module WP Cursor ou module Code
+# Formulaire Gravity Forms : renseigner form_id (ex. 42)
+# Override avancé : form_shortcode=[gravityform id="42" title="false"]
+
+[wpcursor name="hero-entete-cocon"]
+heading_tag=h1
+badge=Prépa Sciences Po, à Paris ou en ligne – ScPo Paris & IEP Concours commun
+title=Intégrez Sciences Po avec Cours Thalès
+intro=En première et en terminale, nous vous accompagnons dès le lycée pour vous aider à réussir vos admissions et à vous préparer aux exigences des concours.
+show_reviews=yes
+reviews_rating=4.8
+reviews_count=565 avis
+reviews_url=
+stat1_value=68%
+stat1_label=D'admis à Science Po Paris
+stat2_value=68%
+stat2_label=D'admis à Science Po Paris
+form_title=Trouvez la prépa qui vous correspond
+select1_label=Quel est votre niveau ?
+select1_placeholder=Sélectionnez votre niveau
+select2_label=Quel est votre objectif ?
+select2_placeholder=Sélectionnez votre objectif
+form_action_url=
+form_id=
+form_shortcode=
+phone=01 42 05 41 36
+phone_url=tel:0142054136
+phone_caption=Nous sommes à votre écoute
+custom_html=
+custom_css=
+[/wpcursor]

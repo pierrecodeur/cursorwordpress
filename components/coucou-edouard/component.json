@@ -1,0 +1,28 @@
+{
+  "$schema": "wpcursor-component-v1",
+  "label": "Coucou Edouard",
+  "description": "Message de test — variante claire (fond bleu pâle).",
+  "version": "1.0.1",
+  "updated": "2026-05-11",
+  "props": {
+    "text": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-coucou-edouard__text"
+    },
+    "variant": {
+      "type": "enum",
+      "values": ["light", "claire"],
+      "required": false
+    },
+    "custom_html": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-coucou-edouard__custom-html"
+    },
+    "custom_css": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

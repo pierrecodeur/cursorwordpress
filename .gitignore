@@ -1,0 +1,17 @@
+# Historique local lourd (snapshots serveur — pas nécessaire sur GitHub)
+REPO/wpcursor-history/snapshots/
+REPO/backups/
+
+# Secrets
+.env
+*.pem
+cursor-api.key
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs
+*.log

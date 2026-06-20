@@ -1,0 +1,81 @@
+{
+  "$schema": "wpcursor-component-v1",
+  "label": "Majors de promo",
+  "description": "Grille de cartes résultats : badge laurier (1re, 2e…), nom en italique, filière en gras et établissement.",
+  "version": "1.0.0",
+  "updated": "2026-06-18",
+  "props": {
+    "heading_tag": {
+      "type": "enum",
+      "values": ["h1", "h2", "h3", "p"],
+      "required": false,
+      "css_selector": ".wpcursor-majors-promo__heading"
+    },
+    "section_title": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-majors-promo__heading"
+    },
+    "card1_rank": {
+      "type": "enum",
+      "values": ["1re", "2e", "3e", "4e", "5e"],
+      "required": false,
+      "default": "1re"
+    },
+    "card1_name": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-majors-promo__name"
+    },
+    "card1_specialty": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-majors-promo__detail strong"
+    },
+    "card1_institution": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-majors-promo__institution"
+    },
+    "card1_badge_url": {
+      "type": "url",
+      "required": false
+    },
+    "card1_badge_alt": {
+      "type": "string",
+      "required": false
+    },
+    "card2_rank": { "type": "enum", "values": ["1re", "2e", "3e", "4e", "5e"], "required": false, "default": "1re" },
+    "card2_name": { "type": "string", "required": false },
+    "card2_specialty": { "type": "string", "required": false },
+    "card2_institution": { "type": "string", "required": false },
+    "card2_badge_url": { "type": "url", "required": false },
+    "card2_badge_alt": { "type": "string", "required": false },
+    "card3_rank": { "type": "enum", "values": ["1re", "2e", "3e", "4e", "5e"], "required": false, "default": "1re" },
+    "card3_name": { "type": "string", "required": false },
+    "card3_specialty": { "type": "string", "required": false },
+    "card3_institution": { "type": "string", "required": false },
+    "card3_badge_url": { "type": "url", "required": false },
+    "card3_badge_alt": { "type": "string", "required": false },
+    "card4_rank": { "type": "enum", "values": ["1re", "2e", "3e", "4e", "5e"], "required": false, "default": "2e" },
+    "card4_name": { "type": "string", "required": false },
+    "card4_specialty": { "type": "string", "required": false },
+    "card4_institution": { "type": "string", "required": false },
+    "card4_badge_url": { "type": "url", "required": false },
+    "card4_badge_alt": { "type": "string", "required": false },
+    "card5_rank": { "type": "enum", "values": ["1re", "2e", "3e", "4e", "5e"], "required": false },
+    "card5_name": { "type": "string", "required": false },
+    "card5_specialty": { "type": "string", "required": false },
+    "card5_institution": { "type": "string", "required": false },
+    "card5_badge_url": { "type": "url", "required": false },
+    "card5_badge_alt": { "type": "string", "required": false },
+    "card6_rank": { "type": "enum", "values": ["1re", "2e", "3e", "4e", "5e"], "required": false },
+    "card6_name": { "type": "string", "required": false },
+    "card6_specialty": { "type": "string", "required": false },
+    "card6_institution": { "type": "string", "required": false },
+    "card6_badge_url": { "type": "url", "required": false },
+    "card6_badge_alt": { "type": "string", "required": false },
+    "custom_html": { "type": "string", "required": false },
+    "custom_css": { "type": "string", "required": false }
+  }
+}

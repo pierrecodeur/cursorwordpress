@@ -1,0 +1,23 @@
+# Nos professeurs — 4 cartes (teacher1 à teacher4)
+
+[wpcursor name="nos-professeurs"]
+section_title=Nos professeurs agrégés, normaliens et jury d'admission de la prépa Sciences po :
+teacher1_name=Thomas
+teacher1_quote=« Les résultats, c'est la seule promesse qui compte. »
+teacher1_image_url=
+teacher1_image_alt=Thomas
+teacher2_name=Thomas
+teacher2_quote=« Les résultats, c'est la seule promesse qui compte. »
+teacher2_image_url=
+teacher2_image_alt=
+teacher3_name=Thomas
+teacher3_quote=« Les résultats, c'est la seule promesse qui compte. »
+teacher3_image_url=
+teacher3_image_alt=
+teacher4_name=Thomas
+teacher4_quote=« Les résultats, c'est la seule promesse qui compte. »
+teacher4_image_url=
+teacher4_image_alt=
+custom_html=
+custom_css=
+[/wpcursor]

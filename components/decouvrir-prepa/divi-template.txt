@@ -1,0 +1,32 @@
+# Découvrir nos prépas — 4 onglets (Sciences Po)
+# Onglet 1 : tab1_* — Onglets 2–4 : tab2_*, tab3_*, tab4_*
+
+[wpcursor name="decouvrir-prepa"]
+section_title=Découvrez nos prépas Sciences Po :
+default_tab=1
+tab1_label=Prépa Sciences po (première)
+tab2_label=Prépa Sciences Po Paris
+tab3_label=Prépa Concours Commun ScPo
+tab4_label=Prépa IEP Combinée
+tab1_price_prefix=À PARTIR
+tab1_price_amount=1990€
+tab1_price_subtitle=Prepa Sciences Po (Première)
+tab1_feature1=Formule week-end + accompagnement Parcoursup
+tab1_feature2=Préparation intensive au Bac de français incluse
+tab1_feature3=Office hours et coaching individualisé disponible
+tab1_feature4=Classes à effectif réduit (20 élèves maximum)
+tab1_feature5=E-learning 24h/24 et 7j/7
+tab1_card_link_text=En savoir plus
+tab1_card_link_url=
+tab1_badge1=Plus de 17 ans d'expérience
+tab1_badge2=La référence pour Sciences po
+tab1_intro_lead=La prépa Sciences Po Première de Cours Thalès accompagne les élèves de première dans la construction d'un dossier Parcoursup solide.
+tab1_intro_body=Un programme structuré pour découvrir Sciences Po, renforcer le niveau scolaire et aborder sereinement les épreuves à venir.
+tab1_highlight_text=Une formule pensée pour les lycéens de première : cours le week-end, suivi Parcoursup et préparation au bac de français intégrée.
+tab1_cta_text=S'inscrire à la prépa
+tab1_cta_url=
+tab1_detail_link_text=En savoir plus
+tab1_detail_link_url=
+custom_html=
+custom_css=
+[/wpcursor]

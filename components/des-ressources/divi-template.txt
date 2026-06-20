@@ -1,0 +1,41 @@
+# Des ressources — liens + Spotify / audio
+
+[wpcursor name="des-ressources"]
+section_title=Des ressources pour accompagner les élèves vers la réussite en IEP
+intro_text=La Prépa Sciences Po Cours Thalès propose également des dossiers en libre accès pour aider les Lycéens qui souhaitent intégrer un Institut d'Études Politiques :
+spotify_url=
+spotify_embed_url=
+spotify_vignette_url=
+spotify_vignette_alt=Podcast Cours Thalès — Leçons d'avenir
+spotify_title=La success story de Marie, élève à Sciences Po Paris
+spotify_meta=Leçons d'avenir • Podcast Cours Thalès
+spotify_save_label=Enregistrer sur Spotify
+audio_url=
+resource1_text=Quelles spécialités pour faire Sciences Po ?
+resource1_url=
+resource2_text=La lettre de motivation pour Sciences Po
+resource2_url=
+resource3_text=Comment réussir l'épreuve d'histoire du concours commun ?
+resource3_url=
+resource4_text=Les épreuves orales des IEP : conseils et méthode
+resource4_url=
+resource5_text=Parcoursup et Sciences Po : les bonnes pratiques
+resource5_url=
+resource6_text=Culture générale : par où commencer ?
+resource6_url=
+resource7_text=Les différents concours pour intégrer un IEP
+resource7_url=
+resource8_text=Sciences Po Paris : procédure d'admission
+resource8_url=
+resource9_text=Préparer le Grand Oral du bac en prépa Sciences Po
+resource9_url=
+resource10_text=Stage en Première : est-ce utile pour Sciences Po ?
+resource10_url=
+resource11_text=Les erreurs à éviter dans son dossier Parcoursup
+resource11_url=
+custom_html=
+custom_css=
+[/wpcursor]
+
+# Ressources 12 à 15 : resource12_text, resource12_url, etc.
+# Spotify : coller l'URL épisode (open.spotify.com/episode/…) ou spotify_embed_url directement

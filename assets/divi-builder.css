@@ -1,0 +1,112 @@
+/* Formulaire dynamique WP Cursor dans le module Divi (onglets partagés avec l’admin) */
+.wpcursor-divi-guided {
+	margin: 12px 0 16px;
+	max-height: 58vh;
+	overflow: hidden;
+}
+.wpcursor-divi-guided .wpcursor-gen-tabbed {
+	margin: 0;
+}
+.wpcursor-divi-guided .wpcursor-gen-tabs {
+	padding: 5px;
+	background: #eef2f7;
+	border-radius: 10px;
+	margin-bottom: 8px;
+}
+.wpcursor-divi-guided .wpcursor-gen-tab {
+	padding: 7px 12px;
+	font-size: 12px;
+}
+.wpcursor-divi-guided .wpcursor-gen-tab-panel {
+	max-height: 48vh;
+	padding: 12px;
+}
+.wpcursor-divi-guided .wpcursor-gen-fields-grid {
+	grid-template-columns: 1fr;
+	gap: 12px;
+}
+.wpcursor-divi-guided .wpcursor-gen-meta {
+	margin: 0 0 10px;
+	font-size: 12px;
+	color: #50575e;
+}
+.wpcursor-divi-guided .wpcursor-gen-field {
+	margin: 0 0 14px;
+}
+.wpcursor-divi-guided label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 4px;
+	font-size: 13px;
+}
+.wpcursor-divi-guided .wpcursor-gen-help {
+	margin: 2px 0 6px;
+	font-size: 11px;
+	color: #646970;
+}
+.wpcursor-divi-guided .wpcursor-gen-help code {
+	font-size: 11px;
+}
+.wpcursor-divi-guided input[type="text"],
+.wpcursor-divi-guided input[type="url"],
+.wpcursor-divi-guided select,
+.wpcursor-divi-guided textarea {
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 6px;
+	font-size: 13px;
+}
+.wpcursor-divi-guided textarea {
+	min-height: 72px;
+}
+.wpcursor-divi-guided .wpcursor-gen-color-row {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: 6px;
+	font-size: 12px;
+}
+.wpcursor-divi-guided .wpcursor-gen-media-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	align-items: center;
+}
+.wpcursor-divi-guided .wpcursor-gen-media-row input {
+	flex: 1 1 180px;
+}
+.wpcursor-divi-guided .wpcursor-gen-media-preview {
+	display: block;
+	max-width: 120px;
+	margin-top: 6px;
+	border-radius: 4px;
+}
+.wpcursor-divi-guided .wpcursor-gen-advanced > summary {
+	cursor: pointer;
+	font-weight: 700;
+	margin: 8px 0 4px;
+}
+/* Masquer le champ technique tant que le formulaire guidé est affiché */
+.wpcursor-has-guided .wpcursor-divi-props-raw-wrap.wpcursor-divi-props-raw--collapsed {
+	display: none !important;
+}
+.wpcursor-divi-props-raw-wrap:not(.wpcursor-divi-props-raw--collapsed) textarea {
+	min-height: 120px;
+}
+.wpcursor-divi-props-raw-wrap .wpcursor-divi-raw-toggle {
+	margin: 8px 0 0;
+	font-size: 12px;
+	cursor: pointer;
+	color: #2271b1;
+	text-decoration: underline;
+}
+.wpcursor-divi-guided-intro {
+	margin: 0 0 10px;
+	padding: 10px 12px;
+	background: #f0f6fc;
+	border-left: 4px solid #2271b1;
+	border-radius: 0 8px 8px 0;
+	font-size: 13px;
+	line-height: 1.45;
+	color: #1d2327;
+}

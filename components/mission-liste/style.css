@@ -1,0 +1,102 @@
+/**
+ * Composant mission-liste — section mission Cours Thalès.
+ */
+
+.wpcursor-mission-liste {
+	box-sizing: border-box;
+	margin: 0 0 2rem;
+}
+
+.wpcursor-mission-liste__outer {
+	max-width: 920px;
+	margin: 0 auto;
+	padding: 8px;
+	border: 1px solid #e8b4c8;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.wpcursor-mission-liste__title {
+	margin: 0 0 1.25rem;
+	padding: 0 0.5rem;
+	font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+	font-weight: 700;
+	line-height: 1.35;
+	text-align: center;
+	color: #06113a;
+}
+
+.wpcursor-mission-liste__card {
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 4px 24px rgba(6, 17, 58, 0.08);
+	padding: 1.75rem 2rem 2rem;
+	box-sizing: border-box;
+}
+
+.wpcursor-mission-liste__intro {
+	margin: 0 0 1.5rem;
+	padding-bottom: 1.25rem;
+	border-bottom: 1px solid #e2e6ec;
+	font-size: 1rem;
+	font-style: italic;
+	line-height: 1.65;
+	text-align: center;
+	color: #6b7280;
+}
+
+.wpcursor-mission-liste__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+.wpcursor-mission-liste__item {
+	display: flex;
+	align-items: flex-start;
+	gap: 14px;
+	margin: 0;
+}
+
+.wpcursor-mission-liste__icon {
+	flex-shrink: 0;
+	width: 28px;
+	height: 28px;
+	margin-top: 2px;
+	border-radius: 50%;
+	background: #8b2942;
+	position: relative;
+}
+
+.wpcursor-mission-liste__icon::after {
+	content: "";
+	position: absolute;
+	left: 9px;
+	top: 6px;
+	width: 6px;
+	height: 11px;
+	border: solid #fff;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+
+.wpcursor-mission-liste__text {
+	margin: 0;
+	flex: 1;
+	font-size: 0.95rem;
+	line-height: 1.65;
+	color: #6b7280;
+}
+
+@media (max-width: 640px) {
+	.wpcursor-mission-liste__card {
+		padding: 1.25rem 1.25rem 1.5rem;
+	}
+
+	.wpcursor-mission-liste__outer {
+		padding: 6px;
+	}
+}

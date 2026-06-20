@@ -1,0 +1,25 @@
+# Bannière localisation prépa — jusqu'à 8 lieux
+
+[wpcursor name="localisation-prepa"]
+section_title=Notre Prépa IEP est disponible à Paris ou à distance
+location1_image_url=
+location1_image_alt=Lycée Stanislas, Paris 6e
+location1_title=Stanislas
+location1_subtitle=Lycée - 6e arrondissement de Paris
+location2_image_url=
+location2_image_alt=Lycée Fénelon Sainte-Marie, Paris 8e
+location2_title=Fénelon Sainte-Marie
+location2_subtitle=Lycée - 8e arrondissement de Paris
+location3_image_url=
+location3_image_alt=Lycée Saint-Thomas d'Aquin, Paris 7e
+location3_title=Saint-Thomas d'Aquin
+location3_subtitle=Lycée - 7e arrondissement de Paris
+location4_image_url=
+location4_image_alt=Prépa en visioconférence
+location4_title=Depuis chez vous
+location4_subtitle=En visioconférence
+custom_html=
+custom_css=
+[/wpcursor]
+
+# Lieux 5 à 8 : location5_image_url, location5_title, location5_subtitle, etc.

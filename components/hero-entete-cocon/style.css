@@ -1,0 +1,641 @@
+/**
+ * Hero entête de cocon — pages silo sous le header.
+ */
+
+.wpcursor-hero-entete-cocon {
+	box-sizing: border-box;
+	margin: 0;
+	width: 100%;
+	max-width: 100%;
+	color: #fff;
+	position: relative;
+	overflow-x: clip;
+	overflow-y: visible;
+}
+
+.wpcursor-hero-entete-cocon__shell {
+	position: relative;
+	width: 100%;
+	background: #06113a;
+	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), 50% 100%, 0 calc(100% - 40px));
+}
+
+.wpcursor-hero-entete-cocon__bg {
+	background: transparent;
+	padding: 2rem 0 3.25rem;
+	position: relative;
+}
+
+.wpcursor-hero-entete-cocon__inner {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 1.25rem;
+	box-sizing: border-box;
+}
+
+.wpcursor-hero-entete-cocon__grid {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(380px, 440px);
+	grid-template-areas:
+		"content aside";
+	gap: 1.25rem 2.5rem;
+	align-items: start;
+}
+
+.wpcursor-hero-entete-cocon__grid--has-stats {
+	grid-template-areas:
+		"content aside"
+		"stats aside";
+}
+
+.wpcursor-hero-entete-cocon__content {
+	grid-area: content;
+	min-width: 0;
+}
+
+.wpcursor-hero-entete-cocon__stats-slot {
+	grid-area: stats;
+	min-width: 0;
+}
+
+.wpcursor-hero-entete-cocon__pre-form-divider {
+	display: none;
+}
+
+.wpcursor-hero-entete-cocon__badge {
+	display: inline-block;
+	margin: 0 0 0.85rem;
+	padding: 0.5rem 1rem;
+	background: #fff;
+	border-radius: 999px;
+	color: #06113a;
+	font-size: 0.8125rem;
+	font-weight: 600;
+	line-height: 1.35;
+	white-space: nowrap;
+	width: fit-content;
+	max-width: none;
+	box-sizing: border-box;
+}
+
+.wpcursor-hero-entete-cocon__title {
+	margin: 0 0 0.75rem;
+	font-size: clamp(1.5rem, 2.6vw, 2rem);
+	font-weight: 700;
+	line-height: 1.2;
+	color: #fff;
+}
+
+.wpcursor-hero-entete-cocon__intro {
+	margin: 0 0 1rem;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	line-height: 1.55;
+	color: rgba(255, 255, 255, 0.92);
+	max-width: 32rem;
+}
+
+.wpcursor-hero-entete-cocon__reviews {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.45rem 0.65rem;
+	margin: 0 0 1rem;
+	padding: 0.5rem 0.75rem;
+	background: #fff;
+	border-radius: 10px;
+	color: #06113a;
+	text-decoration: none;
+	box-shadow: 0 2px 10px rgba(6, 17, 58, 0.12);
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.wpcursor-hero-entete-cocon__reviews:hover,
+.wpcursor-hero-entete-cocon__reviews:focus-visible {
+	color: #06113a;
+	text-decoration: none;
+	box-shadow: 0 4px 16px rgba(6, 17, 58, 0.18);
+}
+
+.wpcursor-hero-entete-cocon__reviews-google {
+	display: inline-flex;
+	align-items: center;
+	line-height: 0;
+}
+
+.wpcursor-hero-entete-cocon__reviews-rating {
+	font-size: 0.9375rem;
+	font-weight: 700;
+}
+
+.wpcursor-hero-entete-cocon__reviews-stars {
+	color: #f5b301;
+	font-size: 0.875rem;
+	letter-spacing: 0.04em;
+	line-height: 1;
+}
+
+.wpcursor-hero-entete-cocon__reviews-count {
+	font-size: 0.875rem;
+	font-weight: 500;
+	color: #4b5563;
+}
+
+.wpcursor-hero-entete-cocon__divider {
+	height: 1px;
+	margin: 0 0 1rem;
+	max-width: 32rem;
+	background: rgba(255, 255, 255, 0.22);
+}
+
+.wpcursor-hero-entete-cocon__stats {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem 1.5rem;
+	align-items: center;
+	max-width: 32rem;
+}
+
+.wpcursor-hero-entete-cocon__stat {
+	display: flex;
+	align-items: center;
+	gap: 0.65rem;
+	min-width: 0;
+	flex: 0 1 auto;
+}
+
+.wpcursor-hero-entete-cocon__stat-badge {
+	position: relative;
+	flex-shrink: 0;
+	width: 64px;
+	height: 64px;
+	color: #fff;
+}
+
+.wpcursor-hero-entete-cocon__stat-wreath {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.wpcursor-hero-entete-cocon__stat-value {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.wpcursor-hero-entete-cocon__stat-label {
+	margin: 0;
+	font-size: 0.875rem;
+	font-weight: 600;
+	line-height: 1.3;
+	color: #fff;
+	max-width: 9.5rem;
+}
+
+.wpcursor-hero-entete-cocon__aside {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	min-width: 0;
+	width: 100%;
+	max-width: 440px;
+	justify-self: end;
+	grid-area: aside;
+}
+
+.wpcursor-hero-entete-cocon__card-stack {
+	position: relative;
+	width: 100%;
+	max-width: 440px;
+	padding-bottom: 0.35rem;
+}
+
+.wpcursor-hero-entete-cocon__card-layer {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 14px;
+	border-radius: 0 0 18px 18px;
+	background: rgba(255, 255, 255, 0.08);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.wpcursor-hero-entete-cocon__card-layer--2 {
+	bottom: -8px;
+	width: calc(100% - 24px);
+	z-index: 1;
+}
+
+.wpcursor-hero-entete-cocon__card-layer--3 {
+	bottom: -16px;
+	width: calc(100% - 48px);
+	z-index: 0;
+	opacity: 0.7;
+}
+
+.wpcursor-hero-entete-cocon__card {
+	position: relative;
+	z-index: 2;
+	background: #fff;
+	border-radius: 20px;
+	box-shadow: 0 12px 36px rgba(6, 17, 58, 0.2);
+	padding: 1.75rem 1.5rem 2rem;
+	box-sizing: border-box;
+	min-height: 280px;
+}
+
+.wpcursor-hero-entete-cocon__form-title {
+	margin: 0 0 1.35rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	line-height: 1.35;
+	text-align: center;
+	color: #06113a;
+}
+
+.wpcursor-hero-entete-cocon__form,
+.wpcursor-hero-entete-cocon__form-embed {
+	width: 100%;
+}
+
+.wpcursor-hero-entete-cocon__field {
+	margin: 0 0 1.25rem;
+}
+
+.wpcursor-hero-entete-cocon__field:last-child {
+	margin-bottom: 0;
+}
+
+.wpcursor-hero-entete-cocon__field-label {
+	display: block;
+	margin: 0 0 0.55rem;
+	font-size: 0.875rem;
+	font-weight: 600;
+	color: #06113a;
+}
+
+.wpcursor-hero-entete-cocon__select-wrap {
+	position: relative;
+}
+
+.wpcursor-hero-entete-cocon__select-wrap::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 14px;
+	width: 8px;
+	height: 8px;
+	border-right: 2px solid #6b7280;
+	border-bottom: 2px solid #6b7280;
+	transform: translateY(-65%) rotate(45deg);
+	pointer-events: none;
+}
+
+.wpcursor-hero-entete-cocon__select {
+	appearance: none;
+	width: 100%;
+	min-height: 52px;
+	padding: 0.95rem 2.25rem 0.95rem 1rem;
+	border: 1px solid #e2e6ec;
+	border-radius: 12px;
+	background: #fff;
+	color: #06113a;
+	font-size: 0.9375rem;
+	line-height: 1.3;
+	box-sizing: border-box;
+	box-shadow: 0 1px 2px rgba(6, 17, 58, 0.04);
+}
+
+.wpcursor-hero-entete-cocon__select:focus-visible {
+	outline: 2px solid #445cff;
+	outline-offset: 2px;
+	border-color: #445cff;
+}
+
+.wpcursor-hero-entete-cocon__phone-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.45rem;
+	width: 100%;
+	max-width: 440px;
+}
+
+.wpcursor-hero-entete-cocon__phone-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.55rem;
+	padding: 0.55rem 1rem 0.55rem 0.55rem;
+	background: #fff;
+	border-radius: 999px;
+	color: #06113a;
+	font-size: 1rem;
+	font-weight: 700;
+	text-decoration: none;
+	box-shadow: 0 6px 20px rgba(6, 17, 58, 0.16);
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.wpcursor-hero-entete-cocon__phone-link:hover,
+.wpcursor-hero-entete-cocon__phone-link:focus-visible {
+	color: #06113a;
+	text-decoration: none;
+	transform: translateY(-1px);
+	box-shadow: 0 12px 28px rgba(6, 17, 58, 0.22);
+}
+
+.wpcursor-hero-entete-cocon__phone-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background: #06113a;
+	color: #fff;
+	flex-shrink: 0;
+}
+
+.wpcursor-hero-entete-cocon__phone-caption {
+	margin: 0;
+	font-size: 0.8125rem;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 0.88);
+	text-align: center;
+}
+
+.wpcursor-hero-entete-cocon__form-embed .gform_wrapper,
+.wpcursor-hero-entete-cocon__form-embed form {
+	margin: 0 !important;
+}
+
+.wpcursor-hero-entete-cocon__form-embed .gform_fields {
+	display: flex !important;
+	flex-direction: column !important;
+	gap: 1.25rem !important;
+}
+
+.wpcursor-hero-entete-cocon__form-embed .gfield {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.wpcursor-hero-entete-cocon__form-embed .gfield_label {
+	margin: 0 0 0.55rem !important;
+	font-size: 0.875rem !important;
+	font-weight: 600 !important;
+	color: #06113a !important;
+}
+
+.wpcursor-hero-entete-cocon__form-embed .gform_body input[type="text"],
+.wpcursor-hero-entete-cocon__form-embed .gform_body input[type="email"],
+.wpcursor-hero-entete-cocon__form-embed .gform_body input[type="tel"],
+.wpcursor-hero-entete-cocon__form-embed .gform_body select,
+.wpcursor-hero-entete-cocon__form-embed .gfield input.large,
+.wpcursor-hero-entete-cocon__form-embed .gfield select.large,
+.wpcursor-hero-entete-cocon__form-embed input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]) {
+	width: 100% !important;
+	min-height: 52px !important;
+	border-radius: 12px !important;
+	border: 1px solid #e2e6ec !important;
+	padding: 0.95rem 1rem !important;
+	background: #fff !important;
+	font-size: 0.9375rem !important;
+	color: #06113a !important;
+	box-shadow: 0 1px 2px rgba(6, 17, 58, 0.04) !important;
+	box-sizing: border-box !important;
+}
+
+/* Pleine largeur sous header Divi */
+.wpcursor-hero-entete-cocon {
+	width: 100vw;
+	max-width: 100vw;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+}
+
+@media (min-width: 961px) {
+	.wpcursor-hero-entete-cocon__stats {
+		flex-wrap: nowrap;
+	}
+}
+
+@media (max-width: 960px) {
+	.wpcursor-hero-entete-cocon__grid {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"content"
+			"pre-div"
+			"aside";
+		gap: 0.75rem;
+		align-items: stretch;
+	}
+
+	.wpcursor-hero-entete-cocon__grid--has-stats {
+		grid-template-areas:
+			"content"
+			"pre-div"
+			"aside"
+			"stats";
+	}
+
+	.wpcursor-hero-entete-cocon__pre-form-divider {
+		display: block;
+		grid-area: pre-div;
+		height: 1px;
+		margin: 0.15rem 0 0.25rem;
+		background: rgba(255, 255, 255, 0.22);
+	}
+
+	.wpcursor-hero-entete-cocon__stats-slot .wpcursor-hero-entete-cocon__divider {
+		display: none;
+	}
+
+	.wpcursor-hero-entete-cocon__aside {
+		order: unset;
+		justify-self: center;
+		width: 100%;
+		max-width: 440px;
+		margin: 0 auto;
+	}
+
+	.wpcursor-hero-entete-cocon__content {
+		order: unset;
+	}
+
+	.wpcursor-hero-entete-cocon__card-stack,
+	.wpcursor-hero-entete-cocon__phone-block {
+		max-width: 100%;
+	}
+
+	.wpcursor-hero-entete-cocon__intro,
+	.wpcursor-hero-entete-cocon__stats {
+		max-width: none;
+	}
+
+	.wpcursor-hero-entete-cocon__stats {
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		gap: 0.85rem 1rem;
+		overflow-x: auto;
+		overflow-y: hidden;
+		-webkit-overflow-scrolling: touch;
+		scrollbar-width: none;
+		padding-bottom: 0.15rem;
+		mask-image: linear-gradient(to right, transparent 0%, #000 4%, #000 96%, transparent 100%);
+		-webkit-mask-image: linear-gradient(to right, transparent 0%, #000 4%, #000 96%, transparent 100%);
+	}
+
+	.wpcursor-hero-entete-cocon__stats::-webkit-scrollbar {
+		display: none;
+	}
+
+	.wpcursor-hero-entete-cocon__stat {
+		flex: 0 0 auto;
+		width: auto;
+		max-width: none;
+	}
+
+	.wpcursor-hero-entete-cocon__stat-label {
+		max-width: 7.5rem;
+		font-size: 0.8125rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.wpcursor-hero-entete-cocon__bg {
+		padding-top: 1rem;
+		padding-bottom: 1.75rem;
+	}
+
+	.wpcursor-hero-entete-cocon__inner {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.wpcursor-hero-entete-cocon__grid {
+		gap: 0.65rem;
+	}
+
+	.wpcursor-hero-entete-cocon__badge {
+		display: inline-block;
+		width: fit-content;
+		max-width: 100%;
+		margin-bottom: 0.65rem;
+		padding: 0.45rem 0.75rem;
+		font-size: clamp(0.625rem, 2.6vw, 0.75rem);
+		text-align: left;
+		white-space: nowrap;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		scrollbar-width: none;
+	}
+
+	.wpcursor-hero-entete-cocon__badge::-webkit-scrollbar {
+		display: none;
+	}
+
+	.wpcursor-hero-entete-cocon__title {
+		font-size: clamp(1.35rem, 5.5vw, 1.65rem);
+		margin-bottom: 0.55rem;
+	}
+
+	.wpcursor-hero-entete-cocon__intro {
+		font-size: 0.875rem;
+		line-height: 1.5;
+		margin-bottom: 0.75rem;
+	}
+
+	.wpcursor-hero-entete-cocon__reviews {
+		width: 100%;
+		margin-bottom: 0.35rem;
+		justify-content: flex-start;
+	}
+
+	.wpcursor-hero-entete-cocon__pre-form-divider {
+		margin: 0.35rem 0 0.5rem;
+	}
+
+	.wpcursor-hero-entete-cocon__stat-badge {
+		width: 56px;
+		height: 56px;
+	}
+
+	.wpcursor-hero-entete-cocon__stat-value {
+		font-size: 0.9375rem;
+	}
+
+	.wpcursor-hero-entete-cocon__stats-slot {
+		margin-top: 0.35rem;
+	}
+
+	.wpcursor-hero-entete-cocon__card {
+		border-radius: 18px;
+		padding: 1.35rem 1.15rem 1.5rem;
+		min-height: 0;
+	}
+
+	.wpcursor-hero-entete-cocon__card-layer--2 {
+		width: calc(100% - 18px);
+		bottom: -6px;
+	}
+
+	.wpcursor-hero-entete-cocon__card-layer--3 {
+		width: calc(100% - 36px);
+		bottom: -12px;
+	}
+
+	.wpcursor-hero-entete-cocon__form-title {
+		margin-bottom: 1.1rem;
+		font-size: 1.05rem;
+	}
+
+	.wpcursor-hero-entete-cocon__field {
+		margin-bottom: 1.1rem;
+	}
+
+	.wpcursor-hero-entete-cocon__select {
+		min-height: 48px;
+		padding-top: 0.85rem;
+		padding-bottom: 0.85rem;
+		font-size: 16px;
+	}
+
+	.wpcursor-hero-entete-cocon__phone-block {
+		gap: 0.35rem;
+	}
+
+	.wpcursor-hero-entete-cocon__phone-link {
+		width: auto;
+		max-width: 100%;
+		justify-content: center;
+		font-size: 0.9375rem;
+	}
+
+	.wpcursor-hero-entete-cocon__phone-caption {
+		font-size: 0.75rem;
+	}
+
+	.wpcursor-hero-entete-cocon__shell {
+		clip-path: polygon(0 0, 100% 0, 100% calc(100% - 28px), 50% 100%, 0 calc(100% - 28px));
+	}
+
+	.wpcursor-hero-entete-cocon__bg {
+		padding-bottom: 2.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.wpcursor-hero-entete-cocon__reviews-count {
+		flex: 0 0 auto;
+	}
+}

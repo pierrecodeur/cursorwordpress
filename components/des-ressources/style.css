@@ -1,0 +1,275 @@
+/**
+ * Des ressources — liens + Spotify.
+ */
+
+.wpcursor-des-ressources {
+	box-sizing: border-box;
+	margin: 0 0 2rem;
+	color: #06113a;
+	background: #fff;
+}
+
+.wpcursor-des-ressources__inner {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 1.25rem;
+	box-sizing: border-box;
+}
+
+.wpcursor-des-ressources__heading {
+	margin: 0 0 0.85rem;
+	font-size: clamp(1.15rem, 2.3vw, 1.5rem);
+	font-weight: 700;
+	line-height: 1.35;
+	text-align: center;
+	color: #06113a;
+}
+
+.wpcursor-des-ressources__intro {
+	margin: 0 auto 1.35rem;
+	max-width: 52rem;
+	font-size: 0.875rem;
+	line-height: 1.55;
+	text-align: center;
+	color: #555555;
+}
+
+.wpcursor-des-ressources__grid {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+	gap: 1.5rem 2rem;
+	align-items: start;
+}
+
+.wpcursor-des-ressources__links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.55rem;
+}
+
+.wpcursor-des-ressources__link-item {
+	position: relative;
+	padding-left: 1rem;
+}
+
+.wpcursor-des-ressources__link-item::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.55em;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: #c5cad3;
+}
+
+.wpcursor-des-ressources__link {
+	font-size: 0.8125rem;
+	font-weight: 600;
+	line-height: 1.45;
+	color: #06113a !important;
+	text-decoration: none !important;
+	transition: color 0.15s ease;
+}
+
+.wpcursor-des-ressources__link:hover,
+.wpcursor-des-ressources__link:focus-visible {
+	color: #004d4d !important;
+	text-decoration: underline !important;
+}
+
+.wpcursor-des-ressources__link--static {
+	cursor: default;
+}
+
+/* Carte Spotify — teal prototype #004d4d */
+.wpcursor-des-ressources__player-card {
+	position: relative;
+	background: #004d4d;
+	border-radius: 14px;
+	box-shadow: 0 12px 32px rgba(0, 77, 77, 0.28);
+	padding: 0.85rem 0.85rem 0.65rem;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.wpcursor-des-ressources__player-brand {
+	position: absolute;
+	top: 0.85rem;
+	right: 0.85rem;
+	z-index: 2;
+}
+
+.wpcursor-des-ressources__spotify-logo {
+	display: block;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background: #1ed760;
+	box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.15);
+}
+
+.wpcursor-des-ressources__vignette-wrap {
+	margin: 0 0 0.75rem;
+	border-radius: 10px;
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.wpcursor-des-ressources__spotify-vignette {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 10;
+	object-fit: cover;
+}
+
+.wpcursor-des-ressources__vignette-wrap--placeholder {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 140px;
+	padding: 1rem;
+	background: linear-gradient(135deg, #006666 0%, #003333 100%);
+	text-align: center;
+}
+
+.wpcursor-des-ressources__vignette-placeholder-title {
+	margin: 0 0 0.25rem;
+	font-size: 0.875rem;
+	font-weight: 700;
+	color: #fff;
+}
+
+.wpcursor-des-ressources__vignette-placeholder-sub {
+	margin: 0;
+	font-size: 0.6875rem;
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.85);
+}
+
+.wpcursor-des-ressources__player-meta {
+	margin: 0 0 0.65rem;
+	padding-right: 1.75rem;
+}
+
+.wpcursor-des-ressources__spotify-title {
+	margin: 0 0 0.25rem;
+	font-size: 0.875rem;
+	font-weight: 700;
+	line-height: 1.35;
+	color: #fff;
+}
+
+.wpcursor-des-ressources__spotify-meta {
+	margin: 0 0 0.45rem;
+	font-size: 0.6875rem;
+	font-weight: 500;
+	line-height: 1.35;
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.wpcursor-des-ressources__spotify-save {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	font-size: 0.6875rem;
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.88) !important;
+	text-decoration: none !important;
+}
+
+.wpcursor-des-ressources__spotify-save:hover,
+.wpcursor-des-ressources__spotify-save:focus-visible {
+	color: #fff !important;
+}
+
+.wpcursor-des-ressources__spotify-save-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 16px;
+	height: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.55);
+	border-radius: 3px;
+	font-size: 0.75rem;
+	line-height: 1;
+}
+
+.wpcursor-des-ressources__spotify-save--static {
+	cursor: default;
+}
+
+.wpcursor-des-ressources__player-audio {
+	border-radius: 8px;
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.15);
+}
+
+.wpcursor-des-ressources__spotify-iframe {
+	display: block;
+	width: 100%;
+	height: 80px;
+	border: 0;
+	background: transparent;
+}
+
+.wpcursor-des-ressources__audio {
+	display: block;
+	width: 100%;
+	height: 48px;
+	margin: 0;
+	filter: invert(1) hue-rotate(140deg) brightness(1.1);
+}
+
+.wpcursor-des-ressources__player-hint {
+	margin: 0;
+	padding: 0.65rem 0.75rem;
+	font-size: 0.6875rem;
+	line-height: 1.4;
+	color: rgba(255, 255, 255, 0.75);
+	text-align: center;
+}
+
+@media (max-width: 860px) {
+	.wpcursor-des-ressources__grid {
+		grid-template-columns: 1fr;
+		gap: 1.25rem;
+	}
+
+	.wpcursor-des-ressources__player-card {
+		max-width: 420px;
+		margin: 0 auto;
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.wpcursor-des-ressources__inner {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.wpcursor-des-ressources__heading {
+		font-size: 1.05rem;
+		text-align: left;
+	}
+
+	.wpcursor-des-ressources__intro {
+		text-align: left;
+		font-size: 0.8125rem;
+		margin-bottom: 1rem;
+	}
+
+	.wpcursor-des-ressources__link {
+		font-size: 0.75rem;
+	}
+
+	.wpcursor-des-ressources__player-card {
+		max-width: none;
+	}
+}

@@ -1,0 +1,16 @@
+# Modèle à coller dans Divi (module Code ou module WP Cursor)
+# Modifiez uniquement le texte APRÈS le signe =
+# Lignes commençant par # sont ignorées
+
+[wpcursor name="etiquettes-defilantes"]
+speed=normal
+show_icon=yes
+item1=17 ans d'expérience
+item2=Préparation concours
+item3=Petits effectifs
+item4=Accompagnement personnalisé
+item5=
+item6=
+custom_html=
+custom_css=
+[/wpcursor]

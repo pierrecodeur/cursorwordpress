@@ -1,0 +1,46 @@
+{
+  "$schema": "wpcursor-component-v1",
+  "label": "Nos professeurs",
+  "description": "Grille de cartes professeurs : photo portrait, citation et nom sur dégradé sombre.",
+  "version": "1.0.0",
+  "updated": "2026-06-03",
+  "props": {
+    "section_title": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-nos-professeurs__heading"
+    },
+    "teacher1_name": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-nos-professeurs__name"
+    },
+    "teacher1_quote": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-nos-professeurs__quote"
+    },
+    "teacher1_image_url": {
+      "type": "url",
+      "required": false
+    },
+    "teacher1_image_alt": {
+      "type": "string",
+      "required": false
+    },
+    "teacher2_name": { "type": "string", "required": false },
+    "teacher2_quote": { "type": "string", "required": false },
+    "teacher2_image_url": { "type": "url", "required": false },
+    "teacher2_image_alt": { "type": "string", "required": false },
+    "teacher3_name": { "type": "string", "required": false },
+    "teacher3_quote": { "type": "string", "required": false },
+    "teacher3_image_url": { "type": "url", "required": false },
+    "teacher3_image_alt": { "type": "string", "required": false },
+    "teacher4_name": { "type": "string", "required": false },
+    "teacher4_quote": { "type": "string", "required": false },
+    "teacher4_image_url": { "type": "url", "required": false },
+    "teacher4_image_alt": { "type": "string", "required": false },
+    "custom_html": { "type": "string", "required": false },
+    "custom_css": { "type": "string", "required": false }
+  }
+}
