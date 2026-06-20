@@ -1,0 +1,30 @@
+# Valeurs Thalès — 4 valeurs avec icônes personnalisables
+
+[wpcursor name="valeurs-thales"]
+item1_title=Exigence et bienveillance
+item1_icon_type=head-gear
+item1_icon_image_url=
+item1_icon_alt=
+item1_link_text=En savoir plus
+item1_link_url=
+item2_title=Professeurs agrégés, normaliens, colleurs
+item2_icon_type=professors
+item2_icon_image_url=
+item2_icon_alt=
+item2_link_text=En savoir plus
+item2_link_url=
+item3_title=En présentiel ou en visio
+item3_icon_type=books
+item3_icon_image_url=
+item3_icon_alt=
+item3_link_text=En savoir plus
+item3_link_url=
+item4_title=Des résultats exceptionnels
+item4_icon_type=cap
+item4_icon_image_url=
+item4_icon_alt=
+item4_link_text=En savoir plus
+item4_link_url=
+custom_html=
+custom_css=
+[/wpcursor]

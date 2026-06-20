@@ -1,0 +1,148 @@
+/**
+ * Valeurs Thalès — grille de valeurs avec icônes.
+ */
+
+.wpcursor-valeurs-thales {
+	box-sizing: border-box;
+	margin: 0 0 2rem;
+	color: #08123c;
+}
+
+.wpcursor-valeurs-thales *,
+.wpcursor-valeurs-thales *::before,
+.wpcursor-valeurs-thales *::after {
+	box-sizing: inherit;
+}
+
+.wpcursor-valeurs-thales__grid {
+	width: min(100%, 1120px);
+	margin: 0 auto;
+	padding: 1.25rem 1.5rem;
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 2rem;
+	align-items: start;
+}
+
+.wpcursor-valeurs-thales__item {
+	min-width: 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wpcursor-valeurs-thales__icon-wrap {
+	position: relative;
+	width: 112px;
+	height: 96px;
+	margin: 0 0 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #050505;
+}
+
+.wpcursor-valeurs-thales__icon-shadow {
+	position: absolute;
+	inset: 16px 10px 8px 18px;
+	border-radius: 34px;
+	background: rgba(235, 196, 83, 0.85);
+	filter: blur(0.5px);
+	transform: translate(6px, 0);
+	z-index: 0;
+}
+
+.wpcursor-valeurs-thales__svg,
+.wpcursor-valeurs-thales__icon-img {
+	position: relative;
+	z-index: 1;
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	filter: drop-shadow(5px 0 0 rgba(235, 196, 83, 0.9));
+}
+
+.wpcursor-valeurs-thales__svg {
+	width: 104px;
+	height: 88px;
+}
+
+.wpcursor-valeurs-thales__icon-img {
+	width: auto;
+	height: auto;
+	object-fit: contain;
+}
+
+.wpcursor-valeurs-thales__title {
+	max-width: 220px;
+	min-height: 2.55em;
+	margin: 0 0 0.7rem;
+	color: #08123c;
+	font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+	font-weight: 800;
+	line-height: 1.22;
+	letter-spacing: -0.01em;
+}
+
+.wpcursor-valeurs-thales__link {
+	color: #497cff;
+	font-size: 0.8125rem;
+	font-weight: 400;
+	line-height: 1.3;
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.18em;
+	transition: color 0.15s ease;
+}
+
+.wpcursor-valeurs-thales__link:hover,
+.wpcursor-valeurs-thales__link:focus-visible {
+	color: #244cd6;
+}
+
+.wpcursor-valeurs-thales__link--static {
+	cursor: default;
+}
+
+.wpcursor-valeurs-thales__custom-html {
+	width: min(100%, 1120px);
+	margin: 0 auto;
+	padding: 0 1.5rem 1rem;
+}
+
+@media (max-width: 980px) {
+	.wpcursor-valeurs-thales__grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 2.25rem 1.5rem;
+	}
+}
+
+@media (max-width: 640px) {
+	.wpcursor-valeurs-thales__grid {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+		padding: 1rem;
+	}
+
+	.wpcursor-valeurs-thales__item {
+		max-width: 280px;
+		margin: 0 auto;
+	}
+
+	.wpcursor-valeurs-thales__icon-wrap {
+		width: 100px;
+		height: 86px;
+		margin-bottom: 0.85rem;
+	}
+
+	.wpcursor-valeurs-thales__svg {
+		width: 94px;
+		height: 78px;
+	}
+
+	.wpcursor-valeurs-thales__title {
+		min-height: 0;
+		margin-bottom: 0.55rem;
+	}
+}

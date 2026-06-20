@@ -1,0 +1,131 @@
+{
+  "$schema": "wpcursor-component-v1",
+  "label": "Valeurs Thalès",
+  "description": "Section de 4 valeurs Cours Thalès avec textes, liens et icônes personnalisables.",
+  "version": "1.0.0",
+  "updated": "2026-06-20",
+  "props": {
+    "item1_title": {
+      "type": "string",
+      "required": false,
+      "default": "Exigence et bienveillance",
+      "css_selector": ".wpcursor-valeurs-thales__title"
+    },
+    "item1_icon_type": {
+      "type": "enum",
+      "values": ["head-gear", "professors", "books", "cap"],
+      "required": false,
+      "default": "head-gear"
+    },
+    "item1_icon_image_url": {
+      "type": "url",
+      "required": false
+    },
+    "item1_icon_alt": {
+      "type": "string",
+      "required": false
+    },
+    "item1_link_text": {
+      "type": "string",
+      "required": false,
+      "default": "En savoir plus",
+      "css_selector": ".wpcursor-valeurs-thales__link"
+    },
+    "item1_link_url": {
+      "type": "url",
+      "required": false
+    },
+    "item2_title": {
+      "type": "string",
+      "required": false,
+      "default": "Professeurs agrégés, normaliens, colleurs"
+    },
+    "item2_icon_type": {
+      "type": "enum",
+      "values": ["head-gear", "professors", "books", "cap"],
+      "required": false,
+      "default": "professors"
+    },
+    "item2_icon_image_url": {
+      "type": "url",
+      "required": false
+    },
+    "item2_icon_alt": {
+      "type": "string",
+      "required": false
+    },
+    "item2_link_text": {
+      "type": "string",
+      "required": false,
+      "default": "En savoir plus"
+    },
+    "item2_link_url": {
+      "type": "url",
+      "required": false
+    },
+    "item3_title": {
+      "type": "string",
+      "required": false,
+      "default": "En présentiel ou en visio"
+    },
+    "item3_icon_type": {
+      "type": "enum",
+      "values": ["head-gear", "professors", "books", "cap"],
+      "required": false,
+      "default": "books"
+    },
+    "item3_icon_image_url": {
+      "type": "url",
+      "required": false
+    },
+    "item3_icon_alt": {
+      "type": "string",
+      "required": false
+    },
+    "item3_link_text": {
+      "type": "string",
+      "required": false,
+      "default": "En savoir plus"
+    },
+    "item3_link_url": {
+      "type": "url",
+      "required": false
+    },
+    "item4_title": {
+      "type": "string",
+      "required": false,
+      "default": "Des résultats exceptionnels"
+    },
+    "item4_icon_type": {
+      "type": "enum",
+      "values": ["head-gear", "professors", "books", "cap"],
+      "required": false,
+      "default": "cap"
+    },
+    "item4_icon_image_url": {
+      "type": "url",
+      "required": false
+    },
+    "item4_icon_alt": {
+      "type": "string",
+      "required": false
+    },
+    "item4_link_text": {
+      "type": "string",
+      "required": false,
+      "default": "En savoir plus"
+    },
+    "item4_link_url": {
+      "type": "url",
+      "required": false
+    },
+    "custom_html": {
+      "type": "string",
+      "required": false
+    },
+    "custom_css": {
+      "type": "string",
+      "required": false
+    }
+  }
+}
