@@ -1,0 +1,1 @@
+[wpcursor name="mon-composant" title="Un accompagnement vers la reussite du projet d’etude superieure de chaque eleve" heading_level="h2" text="Cours Thales propose des dossiers pour aider les lyceens a faire les bons choix d’orientation et reussir leur scolarite." style="simple" align="left"]

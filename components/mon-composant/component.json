@@ -1,0 +1,40 @@
+{
+  "$schema": "wpcursor-component-v1",
+  "label": "Titre et texte",
+  "description": "Bloc de contenu avec un titre configurable de H1 a H6 et un texte descriptif stylable.",
+  "version": "1.0.0",
+  "updated": "2026-06-20",
+  "props": {
+    "title": {
+      "type": "string",
+      "required": false,
+      "default": "Un accompagnement vers la reussite du projet d’etude superieure de chaque eleve",
+      "css_selector": ".wpcursor-mon-composant__title"
+    },
+    "heading_level": {
+      "type": "enum",
+      "required": false,
+      "values": ["h1", "h2", "h3", "h4", "h5", "h6"],
+      "default": "h2",
+      "css_selector": ".wpcursor-mon-composant__title"
+    },
+    "text": {
+      "type": "string",
+      "required": false,
+      "default": "Cours Thales propose des dossiers pour aider les lyceens a faire les bons choix d’orientation et reussir leur scolarite.",
+      "css_selector": ".wpcursor-mon-composant__text"
+    },
+    "style": {
+      "type": "enum",
+      "required": false,
+      "values": ["simple", "accent", "card"],
+      "default": "simple"
+    },
+    "align": {
+      "type": "enum",
+      "required": false,
+      "values": ["left", "center"],
+      "default": "left"
+    }
+  }
+}
