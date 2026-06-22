@@ -1,0 +1,13 @@
+# Modèle Divi — Mon composant
+# image_url : bouton « Choisir dans la médiathèque » dans le générateur / module Divi
+# image_position : left | right | top
+
+[wpcursor name="mon-composant"]
+title=Mon composant
+text=Décrivez ici votre contenu en quelques phrases.
+image_url=
+image_alt=
+image_position=left
+custom_html=
+custom_css=
+[/wpcursor]

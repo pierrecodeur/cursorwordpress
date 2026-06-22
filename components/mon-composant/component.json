@@ -1,0 +1,44 @@
+{
+  "$schema": "wpcursor-component-v1",
+  "label": "Mon composant",
+  "description": "Bloc simple : titre, texte et image optionnelle (médiathèque) positionnable à gauche, à droite ou au-dessus du contenu.",
+  "version": "1.1.0",
+  "updated": "2026-06-22",
+  "props": {
+    "title": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-mon-composant__title"
+    },
+    "text": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-mon-composant__text"
+    },
+    "image_url": {
+      "type": "url",
+      "required": false,
+      "description": "URL de l'image (bouton « Choisir dans la médiathèque » dans le générateur / module Divi)."
+    },
+    "image_alt": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-mon-composant__image"
+    },
+    "image_position": {
+      "type": "enum",
+      "values": ["left", "right", "top"],
+      "required": false,
+      "default": "left"
+    },
+    "custom_html": {
+      "type": "string",
+      "required": false,
+      "css_selector": ".wpcursor-mon-composant__custom-html"
+    },
+    "custom_css": {
+      "type": "string",
+      "required": false
+    }
+  }
+}
