@@ -1,0 +1,228 @@
+/**
+ * proto-contenu-reproduit-identiquement-et — Section « Our Locations ».
+ * Reproduction fidèle : titre bordeaux serif, sous-titre gris, cartes lieu.
+ */
+
+.wpcursor-proto-contenu-reproduit-identiquement-et {
+	--wpc-burgundy: #7b1c31;
+	--wpc-burgundy-dark: #611427;
+	--wpc-ink: #1f2937;
+	--wpc-muted: #64748b;
+	--wpc-star: #f5b301;
+	--wpc-bg: #f6f7f9;
+	--wpc-card: #ffffff;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 3.5rem 0 4rem;
+	background: var(--wpc-bg);
+	color: var(--wpc-ink);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et *,
+.wpcursor-proto-contenu-reproduit-identiquement-et *::before,
+.wpcursor-proto-contenu-reproduit-identiquement-et *::after {
+	box-sizing: border-box;
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__inner {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__header {
+	text-align: center;
+	margin: 0 auto 2.5rem;
+	max-width: 720px;
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__heading {
+	margin: 0 0 0.85rem;
+	font-family: Georgia, "Times New Roman", "Playfair Display", serif;
+	font-size: clamp(2rem, 4vw, 2.75rem);
+	font-weight: 700;
+	line-height: 1.1;
+	color: var(--wpc-burgundy);
+	letter-spacing: -0.01em;
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__subheading {
+	margin: 0 auto;
+	max-width: 620px;
+	font-size: 1rem;
+	line-height: 1.55;
+	color: var(--wpc-muted);
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.75rem;
+	align-items: start;
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__card {
+	background: var(--wpc-card);
+	border-radius: 14px;
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+	border: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__gallery {
+	position: relative;
+	background: #e5e7eb;
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__gallery-track {
+	display: flex;
+	gap: 3px;
+	height: 155px;
+	overflow: hidden;
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__photo {
+	flex: 1 1 0;
+	min-width: 0;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	display: block;
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__gallery-next {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.92);
+	color: var(--wpc-ink);
+	box-shadow: 0 2px 8px rgba(15, 23, 42, 0.25);
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__gallery-next svg {
+	width: 16px;
+	height: 16px;
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__body {
+	padding: 1.4rem 1.5rem 1.6rem;
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__card-title {
+	margin: 0 0 1rem;
+	font-family: Georgia, "Times New Roman", "Playfair Display", serif;
+	font-size: 1.35rem;
+	font-weight: 700;
+	line-height: 1.25;
+	color: var(--wpc-burgundy);
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__info {
+	list-style: none;
+	margin: 0 0 1rem;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.7rem;
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__info-row {
+	display: flex;
+	align-items: center;
+	gap: 0.7rem;
+	font-size: 0.95rem;
+	line-height: 1.4;
+	color: #334155;
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__icon {
+	flex: 0 0 auto;
+	width: 18px;
+	height: 18px;
+	color: var(--wpc-burgundy);
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__info-text {
+	min-width: 0;
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__rating {
+	display: flex;
+	align-items: center;
+	gap: 0.55rem;
+	margin-top: 0.3rem;
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__stars {
+	display: inline-flex;
+	gap: 1px;
+	color: var(--wpc-star);
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__star {
+	width: 15px;
+	height: 15px;
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__rating-text {
+	font-size: 0.88rem;
+	color: var(--wpc-muted);
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__rating-value {
+	font-weight: 600;
+	color: #334155;
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__rating-count {
+	margin-left: 0.15rem;
+}
+
+.wpcursor-proto-contenu-reproduit-identiquement-et__custom-html {
+	margin-top: 2rem;
+}
+
+@media (max-width: 860px) {
+	.wpcursor-proto-contenu-reproduit-identiquement-et__grid {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.wpcursor-proto-contenu-reproduit-identiquement-et {
+		padding: 2.5rem 0 3rem;
+	}
+
+	.wpcursor-proto-contenu-reproduit-identiquement-et__inner {
+		padding: 0 1rem;
+	}
+
+	.wpcursor-proto-contenu-reproduit-identiquement-et__heading {
+		font-size: 1.85rem;
+	}
+
+	.wpcursor-proto-contenu-reproduit-identiquement-et__gallery-track {
+		height: 135px;
+	}
+
+	.wpcursor-proto-contenu-reproduit-identiquement-et__body {
+		padding: 1.2rem 1.2rem 1.4rem;
+	}
+
+	.wpcursor-proto-contenu-reproduit-identiquement-et__card-title {
+		font-size: 1.2rem;
+	}
+
+	.wpcursor-proto-contenu-reproduit-identiquement-et__info-row {
+		font-size: 0.9rem;
+	}
+}
